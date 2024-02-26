@@ -1,0 +1,111 @@
+//@import '_heart';
+
+.restaurants {
+    display: flex;         
+    flex-direction: column;
+    background-color: $bg-section;
+    padding: 10px;
+    gap: 10px;
+}
+
+.card-restaurants {
+    display: flex;
+    flex-direction: column;  
+    gap: 15px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: $bg-card;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.card img {
+    width: 100%;
+    height: 136px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+figcaption {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 80px;
+    height: 29px;
+    background-color: $bg-figcaption;
+    color: $txt-figcaption;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    border-radius: 2px;
+}
+
+.card-content {
+    display: flex;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.card-txt {
+    flex: 1;
+}
+
+.card-title {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.card-subtitle {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+// /* Styles pour la case à cocher et les cœurs */
+// .heart {
+//     position: relative;
+//     align-self: center;
+//     margin-right: 5px;
+
+//     input[type="checkbox"] {
+//         position: absolute;
+//         display: none;
+//     }
+
+//     i {
+//         display: flex;
+//         align-items: center;
+//         height: 25px;
+//         cursor: pointer;
+//         transition: opacity 0.5s ease;
+//     }
+
+//     .fa-solid {
+//         opacity: 0;
+//         position: absolute;
+//         left: 0;
+//         top: 0;
+//         color: transparent;
+//         background-image: $bg-heart;
+//         -webkit-background-clip: text;
+//         background-clip: text;
+//     }
+
+//     input[type="checkbox"]:checked {           
+//         + label i.fa-solid {
+//             opacity: 1;  
+//         }
+//         + label i.fa-regular {
+//             opacity: 0;            
+//         }
+//     }
+// }
