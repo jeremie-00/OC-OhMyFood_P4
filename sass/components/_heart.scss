@@ -9,8 +9,7 @@
     }
 
     i {
-        display: flex;
-        align-items: center;
+        @include flex-center;
         height: 28px;
         cursor: pointer;
         transition: opacity 0.5s ease;
