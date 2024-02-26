@@ -1,0 +1,38 @@
+.heart {
+    position: relative;
+    align-self: center;
+    margin-right: 5px;
+    
+    input[type="checkbox"] {
+        position: absolute;
+        display: none;
+    }
+
+    i {
+        display: flex;
+        align-items: center;
+        height: 28px;
+        cursor: pointer;
+        transition: opacity 0.5s ease;
+    }
+
+    .fa-solid {
+        opacity: 0;
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: transparent;
+        background-image: $bg-heart;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+
+    input[type="checkbox"]:checked {           
+        + label i.fa-solid {
+            opacity: 1;  
+        }
+        + label i.fa-regular {
+            opacity: 0;            
+        }
+    }
+}

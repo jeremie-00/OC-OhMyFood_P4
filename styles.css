@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .wrapper-btn {
   display: flex;
   align-items: center;
@@ -91,6 +92,54 @@ figcaption {
 .card-subtitle {
   font-size: 16px;
   margin-bottom: 10px;
+}
+
+/* Styles pour la case à cocher et les cœurs */
+.heart {
+  position: relative;
+  align-self: center;
+  margin-right: 5px;
+}
+.heart input[type=checkbox] {
+  position: absolute;
+  display: none;
+}
+.heart i {
+  display: flex;
+  align-items: center;
+  height: 25px;
+  cursor: pointer;
+  transition: opacity 0.5s ease;
+}
+.heart .fa-solid {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: transparent;
+  background-image: linear-gradient(-193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.heart input[type=checkbox]:checked + label i.fa-solid {
+  opacity: 1;
+}
+.heart input[type=checkbox]:checked + label i.fa-regular {
+  opacity: 0;
+}
+
+.tag-new {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 80px;
+  height: 29px;
+  background-color: #99E2D0;
+  color: #008766;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
 }
 
 * {

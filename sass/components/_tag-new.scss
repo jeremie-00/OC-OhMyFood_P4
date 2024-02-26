@@ -1,0 +1,13 @@
+.tag-new {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 80px;
+    height: 29px;
+    background-color: $bg-figcaption;
+    color: $txt-figcaption;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    border-radius: 2px;
+}
