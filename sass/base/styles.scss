@@ -8,6 +8,7 @@
 @import '../components/_card';
 @import '../components/_tag-new';
 @import '../components/_heart';
+@import '../components/_footer';
 
 
 
@@ -16,6 +17,15 @@
     padding: 0;
     box-sizing: border-box;
     @include font-txt;
+    list-style-type: none;
+}
+i {
+    width: 25px;
+}
+.section {
+    @include flex($direction: column, $justify: center, $align: initial);
+    @include spacing($padding: 50px 18px 70px, $gap: 20px);
+    //border: 2px solid rgb(236, 4, 4);
 }
 
 .reserver {
@@ -36,28 +46,14 @@
 }
 
 .restaurants {
-    @include flex($direction: column, $justify: center, $align: initial);
     @include bg-section;
-    @include spacing($padding: 15px, $gap: 20px);
-
-    & h1 {
-        @include spacing($padding: 0 0 0 10px);
-    }
 }
 
 .card-restaurants {
-    @include flex($direction: column, $justify: center, $align: initial);
+    @include flex($direction: column, $justify: center, $align: inherit);
     @include spacing($gap: 15px);
 }
 
 
-.fonctionnement {
-    @include flex($direction: column, $justify: center, $align: initial);
-    @include spacing($padding: 15px, $gap: 20px);
-
-    & h1 {
-        @include spacing($padding: 0 0 0 10px);
-    }
-}
 
 

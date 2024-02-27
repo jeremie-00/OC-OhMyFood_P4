@@ -1,7 +1,7 @@
 .heart {
     position: relative;
     align-self: center;
-    @include spacing($margin: 0 5px 0 0);
+    @include spacing($margin: 0 15px 15px 0);
     
     input[type="checkbox"] {
         position: absolute;
@@ -13,7 +13,6 @@
         height: 28px;
         cursor: pointer;
         transition: opacity 0.5s ease;
-        line-height: 19px; 
     }
     .fa-solid {
         opacity: 0;

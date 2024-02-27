@@ -35,7 +35,7 @@
   border: none;
   outline: none;
   text-align: center;
-  width: 125px;
+  width: 110px;
   font-size: 16px;
 }
 
@@ -79,6 +79,7 @@
   justify-content: center;
   align-items: center;
   background-color: #F6F6F6;
+  margin: 0 0 0 15px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
   width: 323px;
   height: 73px;
@@ -111,6 +112,9 @@
   margin: 0 0 10px 0;
   color: grey;
 }
+.contenaire .wrapper .fa-store {
+  color: #9356DC;
+}
 .contenaire .wrapper h4 {
   display: flex;
   flex-direction: row;
@@ -123,7 +127,7 @@
 a {
   color: inherit;
   text-decoration: none;
-  border-radius: 20px;
+  border-radius: 15px;
 }
 
 .card {
@@ -132,15 +136,15 @@ a {
   justify-content: center;
   align-items: initial;
   background-color: rgb(255, 255, 255);
-  border-radius: 20px;
+  border-radius: 15px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
 .card img {
   width: 100%;
-  height: 136px;
+  height: 170px;
   object-fit: cover;
-  border-radius: 20px 20px 0 0;
+  border-radius: 15px 15px 0 0;
 }
 
 .card-content {
@@ -149,22 +153,26 @@ a {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 0 10px;
+  padding: 0 12px 5px;
 }
 
 .card-txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
   flex: 1;
+  padding: 12px 3px 15px;
+  gap: 2px;
 }
 
 .card-title {
   font-size: 18px;
-  margin: 10px 0 0 0;
 }
 
 .card-subtitle {
   font-size: 17px;
-  margin: 0 0 10px 0;
-  font-weight: lighter;
+  font-weight: 300;
 }
 
 .tag-new {
@@ -174,8 +182,8 @@ a {
   align-items: center;
   font-size: 14px;
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 12px;
+  right: 12px;
   width: 80px;
   height: 29px;
   background-color: #99E2D0;
@@ -186,7 +194,7 @@ a {
 .heart {
   position: relative;
   align-self: center;
-  margin: 0 5px 0 0;
+  margin: 0 15px 15px 0;
 }
 .heart input[type=checkbox] {
   position: absolute;
@@ -200,7 +208,6 @@ a {
   height: 28px;
   cursor: pointer;
   transition: opacity 0.5s ease;
-  line-height: 19px;
 }
 .heart .fa-solid {
   opacity: 0;
@@ -219,11 +226,49 @@ a {
   opacity: 0;
 }
 
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 22px 25px;
+  gap: 16px;
+  background-color: #353535;
+  color: white;
+}
+.footer h4 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+  letter-spacing: 0.4px;
+}
+.footer .liste-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 8px;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  list-style-type: none;
+}
+
+i {
+  width: 25px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: initial;
+  padding: 50px 18px 70px;
+  gap: 20px;
 }
 
 .reserver {
@@ -248,36 +293,15 @@ a {
 }
 
 .restaurants {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: initial;
   background-color: #F6F6F6;
-  padding: 15px;
-  gap: 20px;
-}
-.restaurants h1 {
-  padding: 0 0 0 10px;
 }
 
 .card-restaurants {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: initial;
+  align-items: inherit;
   gap: 15px;
-}
-
-.fonctionnement {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: initial;
-  padding: 15px;
-  gap: 20px;
-}
-.fonctionnement h1 {
-  padding: 0 0 0 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */

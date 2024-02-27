@@ -1,0 +1,17 @@
+.footer {
+    @include flex($direction: column, $justify: center, $align: start);
+    @include spacing($padding: 22px 25px, $gap: 16px);
+    background-color: #353535;
+    color: white;
+    & h4 {
+        @include font-title-logo;
+        @include font-size($size: $size-18);
+        font-weight: 100;
+        letter-spacing: 0.4px;
+    }
+
+    & .liste-footer {
+        @include flex($direction: column, $justify: center, $align: start);
+        @include spacing($gap: 8px);
+    }
+}

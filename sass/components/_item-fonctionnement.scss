@@ -3,8 +3,9 @@
     @include spacing($gap: 30px);
 
     & .wrapper {
-        @include flex($direction: row, $justify: center , $align: center);
+        @include flex($direction: row, $justify: center, $align: center);
         @include bg-section;
+        @include spacing($margin: 0 0 0 15px);
         box-shadow: $box-shadow-btn;
         width: 323px;
         height: 73px;
@@ -14,7 +15,7 @@
         width: 95%;
 
         & .tag-num {
-            @include flex($direction: row, $justify: center , $align: center);
+            @include flex($direction: row, $justify: center, $align: center);
             @include font-size($size: $size-tag);
             @include spacing($padding: 3px 0 0 0);
             background-color: $primaire;
@@ -28,14 +29,17 @@
         }
 
         & .fa-solid {
-            @include flex($direction: row, $justify: center , $align: center);
+            @include flex($direction: row, $justify: center, $align: center);
             @include spacing($margin: 0 0 10px 0);
             color: grey;
+        }
 
+        & .fa-store {
+            color: $primaire;
         }
 
         & h4 {
-            @include flex($direction: row, $justify: center , $align: center);
+            @include flex($direction: row, $justify: center, $align: center);
             width: 70%;
             font-weight: 500;
         }
