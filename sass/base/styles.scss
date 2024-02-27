@@ -2,11 +2,14 @@
 @import '../utils/fonts';
 @import '../utils/_mixins';
 
-@import '../components/_button';
-@import '../components/_card';
-@import '../components/_heart';
-@import '../components/_tag-new';
 @import '../components/_header';
+@import '../components/_button';
+@import '../components/_item-fonctionnement';
+@import '../components/_card';
+@import '../components/_tag-new';
+@import '../components/_heart';
+
+
 
 * {
     margin: 0;
@@ -15,22 +18,25 @@
     @include font-txt;
 }
 
-.reserver{
+.reserver {
     @include flex($direction: column, $justify: center, $align: center);
-    @include bg-section; 
+    @include bg-section;
     @include spacing($padding: 20px);
     text-align: center;
 }
+
 .title {
     @include spacing($margin: 20px 0 0 0, $padding: 0 30px);
 }
+
 .subtitle {
-    @include font-size($size: 18px); 
+    @include font-size($size: 18px);
     @include spacing($margin: 10px 0 0 0);
-    font-weight: lighter;
+    font-weight: 300;
 }
+
 .restaurants {
-    @include flex($direction: column, $justify: center, $align: initial); 
+    @include flex($direction: column, $justify: center, $align: initial);
     @include bg-section;
     @include spacing($padding: 15px, $gap: 20px);
 
@@ -43,3 +49,15 @@
     @include flex($direction: column, $justify: center, $align: initial);
     @include spacing($gap: 15px);
 }
+
+
+.fonctionnement {
+    @include flex($direction: column, $justify: center, $align: initial);
+    @include spacing($padding: 15px, $gap: 20px);
+
+    & h1 {
+        @include spacing($padding: 0 0 0 10px);
+    }
+}
+
+

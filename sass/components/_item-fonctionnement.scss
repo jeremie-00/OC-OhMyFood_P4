@@ -1,0 +1,43 @@
+.contenaire {
+    @include flex($direction: column, $justify: center, $align: center);
+    @include spacing($gap: 30px);
+
+    & .wrapper {
+        @include flex($direction: row, $justify: center , $align: center);
+        @include bg-section;
+        box-shadow: $box-shadow-btn;
+        width: 323px;
+        height: 73px;
+        border-radius: 20px;
+        border: none;
+        position: relative;
+        width: 95%;
+
+        & .tag-num {
+            @include flex($direction: row, $justify: center , $align: center);
+            @include font-size($size: $size-tag);
+            @include spacing($padding: 3px 0 0 0);
+            background-color: $primaire;
+            position: absolute;
+            top: 25px;
+            left: -12.5px;
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50px;
+        }
+
+        & .fa-solid {
+            @include flex($direction: row, $justify: center , $align: center);
+            @include spacing($margin: 0 0 10px 0);
+            color: grey;
+
+        }
+
+        & h4 {
+            @include flex($direction: row, $justify: center , $align: center);
+            width: 70%;
+            font-weight: 500;
+        }
+    }
+}
