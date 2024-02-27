@@ -9,7 +9,7 @@
     }
 
     i {
-        @include flex-center;
+        @include flex($direction: row, $justify: center, $align: center);
         height: 28px;
         cursor: pointer;
         transition: opacity 0.5s ease;

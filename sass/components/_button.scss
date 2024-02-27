@@ -1,9 +1,9 @@
 .wrapper-btn {
-    @include flex-center;
+    @include flex($direction: row, $justify: center, $align: center);
 }
 
 .btn {
-    color: white;
+    color: rgb(255, 255, 255);
     width: 220px;
     height: 50px;
     border-radius: 25px;

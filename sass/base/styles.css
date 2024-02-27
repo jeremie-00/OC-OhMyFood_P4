@@ -1,11 +1,12 @@
 .wrapper-btn {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
 .btn {
-  color: white;
+  color: rgb(255, 255, 255);
   width: 220px;
   height: 50px;
   border-radius: 25px;
@@ -25,10 +26,9 @@
 
 .restaurants {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  align-items: unset;
   flex-direction: column;
+  justify-content: center;
+  align-items: initial;
   background-color: #F6F6F6;
   padding: 10px;
   gap: 10px;
@@ -36,10 +36,9 @@
 
 .card-restaurants {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  align-items: unset;
+  justify-content: center;
+  align-items: initial;
   gap: 15px;
 }
 
@@ -51,10 +50,9 @@ a {
 
 .card {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  align-items: unset;
   flex-direction: column;
+  justify-content: center;
+  align-items: initial;
   background-color: rgb(255, 255, 255);
   border-radius: 20px;
   padding: 5px;
@@ -70,6 +68,7 @@ a {
 
 .card-content {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -101,6 +100,7 @@ a {
 }
 .heart i {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   height: 28px;
@@ -127,6 +127,7 @@ a {
 
 .tag-new {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -141,12 +142,13 @@ a {
 
 .header {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
 .header .logo {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   padding-top: 15px;
@@ -160,6 +162,7 @@ a {
 }
 .header .search {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   background-color: #EAEAEA;

@@ -1,16 +1,12 @@
 .restaurants {
-    @include flex-center; 
-    align-items: unset;        
-    flex-direction: column;
+    @include flex($direction: column, $justify: center, $align: initial); 
     background-color: $bg-section;
     padding: 10px;
     gap: 10px;
 }
 
 .card-restaurants {
-    @include flex-center;
-    flex-direction: column; 
-    align-items: unset; 
+    @include flex($direction: column, $justify: center, $align: initial);
     gap: 15px;
 }
 
@@ -21,9 +17,7 @@ a {
 }
 
 .card {
-    @include flex-center;
-    align-items: unset;
-    flex-direction: column;
+    @include flex($direction: column, $justify: center, $align: initial);
     background-color: $bg-card;
     border-radius: 20px;
     padding: 5px;
@@ -38,7 +32,7 @@ a {
 }
 
 .card-content {
-    @include flex-center;
+    @include flex($direction: row, $justify: center, $align: center);
     width: 100%;
     padding: 0 10px;
 }

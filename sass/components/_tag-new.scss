@@ -1,5 +1,5 @@
 .tag-new {
-    @include flex-center; 
+    @include flex($direction: row, $justify: center, $align: center);
     position: absolute;
     top: 20px;
     right: 20px;
