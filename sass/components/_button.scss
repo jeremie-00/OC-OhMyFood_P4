@@ -5,10 +5,10 @@
 .btn {
     @include font-size($size: $size-16);
     @include spacing($margin: 30px);
-    color: rgb(255, 255, 255);
+    @include radius($radius: 25px);
+    color: $font-color-clair;
     width: 220px;
     height: 50px;
-    border-radius: 25px;
     background-image: $bg-btn;
     cursor: pointer;
     border: none;

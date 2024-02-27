@@ -31,3 +31,8 @@
 @mixin bg-section {
   background-color: $bg-section;
 }
+
+//BORDER
+@mixin radius($radius) {
+  border-radius: $radius;
+}

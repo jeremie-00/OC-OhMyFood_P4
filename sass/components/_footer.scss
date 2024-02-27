@@ -2,7 +2,7 @@
     @include flex($direction: column, $justify: center, $align: start);
     @include spacing($padding: 22px 25px, $gap: 16px);
     background-color: #353535;
-    color: white;
+    color: $font-color-clair;
     & h4 {
         @include font-title-logo;
         @include font-size($size: $size-18);

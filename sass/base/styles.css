@@ -49,10 +49,10 @@
 .btn {
   font-size: 16px;
   margin: 30px;
-  color: rgb(255, 255, 255);
+  border-radius: 25px;
+  color: white;
   width: 220px;
   height: 50px;
-  border-radius: 25px;
   background-image: linear-gradient(-179deg, #FF79DA -25%, #9356DC 123.93%);
   cursor: pointer;
   border: none;
@@ -80,10 +80,10 @@
   align-items: center;
   background-color: #F6F6F6;
   margin: 0 0 0 15px;
+  border-radius: 20px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
   width: 323px;
   height: 73px;
-  border-radius: 20px;
   border: none;
   position: relative;
   width: 95%;
@@ -95,6 +95,7 @@
   align-items: center;
   font-size: 14px;
   padding: 3px 0 0 0;
+  border-radius: 50px;
   background-color: #9356DC;
   position: absolute;
   top: 25px;
@@ -102,7 +103,6 @@
   color: white;
   width: 24px;
   height: 24px;
-  border-radius: 50px;
 }
 .contenaire .wrapper .fa-solid {
   display: flex;
@@ -128,6 +128,7 @@ a {
   color: inherit;
   text-decoration: none;
   border-radius: 15px;
+  border-radius: 15px;
 }
 
 .card {
@@ -144,6 +145,7 @@ a {
   width: 100%;
   height: 170px;
   object-fit: cover;
+  border-radius: 15px 15px 0 0;
   border-radius: 15px 15px 0 0;
 }
 
@@ -181,6 +183,7 @@ a {
   justify-content: center;
   align-items: center;
   font-size: 14px;
+  border-radius: 2px;
   position: absolute;
   top: 12px;
   right: 12px;
@@ -188,7 +191,6 @@ a {
   height: 29px;
   background-color: #99E2D0;
   color: #008766;
-  border-radius: 2px;
 }
 
 .heart {
