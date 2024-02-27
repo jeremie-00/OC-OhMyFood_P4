@@ -1,4 +1,5 @@
 @import '../utils/_variables';
+@import '../utils/fonts';
 @import '../utils/_mixins';
 
 @import '../components/_button';
@@ -11,7 +12,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Roboto;
+    @include font-txt;
 }
 
 
