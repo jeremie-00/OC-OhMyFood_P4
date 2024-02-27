@@ -1,7 +1,7 @@
 .heart {
     position: relative;
     align-self: center;
-    margin-right: 5px;
+    @include spacing($margin: 0 5px 0 0);
     
     input[type="checkbox"] {
         position: absolute;

@@ -1,5 +1,6 @@
 .tag-new {
     @include flex($direction: row, $justify: center, $align: center);
+    @include font-size($size: $size-tag);
     position: absolute;
     top: 20px;
     right: 20px;

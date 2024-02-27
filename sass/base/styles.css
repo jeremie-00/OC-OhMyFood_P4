@@ -8,16 +8,16 @@
 }
 
 .btn {
+  font-size: 16px;
+  margin: 30px;
   color: rgb(255, 255, 255);
   width: 220px;
   height: 50px;
-  margin: 30px;
   border-radius: 25px;
   background-image: linear-gradient(-179deg, #FF79DA -25%, #9356DC 123.93%);
   cursor: pointer;
   border: none;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
-  font-size: 16px;
   font-weight: 500;
   text-align: center;
   transition: all 0.3s ease-in-out;
@@ -66,19 +66,19 @@ a {
 
 .card-title {
   font-size: 18px;
-  margin-top: 10px;
+  margin: 10px 0 0 0;
 }
 
 .card-subtitle {
-  font-size: 16px;
-  margin-bottom: 10px;
+  font-size: 17px;
+  margin: 0 0 10px 0;
   font-weight: lighter;
 }
 
 .heart {
   position: relative;
   align-self: center;
-  margin-right: 5px;
+  margin: 0 5px 0 0;
 }
 .heart input[type=checkbox] {
   position: absolute;
@@ -116,6 +116,7 @@ a {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  font-size: 14px;
   position: absolute;
   top: 20px;
   right: 20px;
@@ -137,10 +138,10 @@ a {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding-top: 15px;
+  padding: 15px 0 0 0;
   height: 63px;
   width: 100%;
-  box-shadow: 0px 2px 3px 0px #d7d3d3;
+  box-shadow: 0px 2px 3px 0px #b9b9b9;
   z-index: 1;
 }
 .header .logo img {
@@ -178,24 +179,19 @@ a {
   justify-content: center;
   align-items: center;
   background-color: #F6F6F6;
-  border: 1px solid blue;
+  padding: 20px;
   text-align: center;
-  padding: 20px;
-  margin: 0;
-  padding: 20px;
-  gap: 0;
 }
 
 .title {
   margin: 20px 0 0 0;
   padding: 0 30px;
-  gap: 0;
 }
 
 .subtitle {
   font-size: 18px;
+  margin: 10px 0 0 0;
   font-weight: lighter;
-  margin-top: 10px;
 }
 
 .restaurants {
@@ -204,8 +200,11 @@ a {
   justify-content: center;
   align-items: initial;
   background-color: #F6F6F6;
-  padding: 10px;
-  gap: 10px;
+  padding: 15px;
+  gap: 20px;
+}
+.restaurants h1 {
+  padding: 0 0 0 10px;
 }
 
 .card-restaurants {

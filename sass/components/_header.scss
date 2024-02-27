@@ -3,7 +3,7 @@
 
     .logo {
         @include flex($direction: row, $justify: center, $align: center);
-        padding-top: 15px;
+        @include spacing($padding:15px 0 0 0);
         height: 63px;
         width: 100%;
         box-shadow: $shadow-header-1;
@@ -27,7 +27,7 @@
             outline: none;
             text-align: center;
             width: 125px;
-            font-size: 16px;                                                            
+            @include font-size($size: $size-16);                                                            
         }
     }
     
