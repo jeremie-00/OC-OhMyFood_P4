@@ -30,6 +30,9 @@
   height: 50px;
   box-shadow: 0px 3px 5px 0px #acabab;
 }
+.header .search i {
+  margin: 0 10px 0 0;
+}
 .header .search .input-search {
   background: transparent;
   border: none;
@@ -71,6 +74,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 10px 0;
   gap: 30px;
 }
 .contenaire .wrapper {
@@ -79,7 +83,7 @@
   justify-content: center;
   align-items: center;
   background-color: #F6F6F6;
-  margin: 0 0 0 15px;
+  margin: 0 0 0 10px;
   border-radius: 20px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
   width: 323px;
@@ -104,12 +108,15 @@
   width: 24px;
   height: 24px;
 }
-.contenaire .wrapper .fa-solid {
+.contenaire .wrapper .content {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
-  margin: 0 0 10px 0;
+  align-items: baseline;
+  gap: 10px;
+  width: 100%;
+}
+.contenaire .wrapper .fa-solid {
   color: grey;
 }
 .contenaire .wrapper .fa-store {
@@ -120,7 +127,6 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 70%;
   font-weight: 500;
 }
 
@@ -207,9 +213,9 @@ a {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 28px;
   cursor: pointer;
   transition: opacity 0.5s ease;
+  height: 28px;
 }
 .heart .fa-solid {
   opacity: 0;
@@ -238,6 +244,9 @@ a {
   background-color: #353535;
   color: white;
 }
+.footer i {
+  margin: 0 10px 0 0;
+}
 .footer h4 {
   font-family: "Shrikhand", sans-serif;
   font-size: 18px;
@@ -260,17 +269,14 @@ a {
   list-style-type: none;
 }
 
-i {
-  width: 25px;
-}
-
 .section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: initial;
-  padding: 50px 18px 70px;
+  padding: 50px 20px 70px;
   gap: 20px;
+  border: 2px solid rgb(236, 4, 4);
 }
 
 .reserver {

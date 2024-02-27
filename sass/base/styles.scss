@@ -20,13 +20,14 @@
     list-style-type: none;
 }
 
-i {
-    width: 25px;
-}
+// i {
+//     width: 25px;
+// }
+
 .section {
     @include flex($direction: column, $justify: center, $align: initial);
-    @include spacing($padding: 50px 18px 70px, $gap: 20px);
-    //border: 2px solid rgb(236, 4, 4);
+    @include spacing($padding: 50px 20px 70px, $gap: 20px);
+    border: 2px solid rgb(236, 4, 4);
 }
 
 .reserver {

@@ -1,11 +1,11 @@
 .contenaire {
     @include flex($direction: column, $justify: center, $align: center);
-    @include spacing($gap: 30px);
+    @include spacing($padding: 10px 0, $gap: 30px);
 
     & .wrapper {
         @include flex($direction: row, $justify: center, $align: center);
         @include bg-section;
-        @include spacing($margin: 0 0 0 15px);
+        @include spacing($margin: 0 0 0 10px);
         @include radius($radius: 20px);
         box-shadow: $box-shadow-btn;
         width: 323px;
@@ -28,9 +28,15 @@
             height: 24px;
         }
 
+        & .content {
+            @include flex($direction: row, $justify: center, $align: baseline);
+            @include spacing($gap: 10px);
+            width: 100%;
+            
+
+        }
+
         & .fa-solid {
-            @include flex($direction: row, $justify: center, $align: center);
-            @include spacing($margin: 0 0 10px 0);
             color: grey;
         }
 
@@ -40,7 +46,6 @@
 
         & h4 {
             @include flex($direction: row, $justify: center, $align: center);
-            width: 70%;
             font-weight: 500;
         }
     }

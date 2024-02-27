@@ -3,6 +3,11 @@
     @include spacing($padding: 22px 25px, $gap: 16px);
     background-color: #353535;
     color: $font-color-clair;
+
+    & i {
+        @include spacing($margin: 0 10px 0 0);
+    }
+
     & h4 {
         @include font-title-logo;
         @include font-size($size: $size-18);
