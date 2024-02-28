@@ -32,5 +32,10 @@
             text-align: center;                                                             
         }
     }
+
+    & a {
+        $size: 22px;
+        @include absolute($top: $size, $left: $size);
+    }
     
 }

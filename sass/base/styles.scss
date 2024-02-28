@@ -1,54 +1,22 @@
+@import '_fonts';
+@import '_reset';
+
 @import '../utils/_variables';
-@import '../utils/fonts';
 @import '../utils/_mixins';
 
-@import '../components/_loader';
-@import '../components/_header';
+@import '../pages/_home';
+@import '../pages/_restaurants';
+
+@import '../layout/_loader';
+@import '../layout/_header';
+@import '../layout/_footer';
+
+
 @import '../components/_button';
 @import '../components/_item-fonctionnement';
 @import '../components/_card';
 @import '../components/_tag-new';
 @import '../components/_heart';
-@import '../components/_footer';
 
 
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: $font-txt;
-    list-style-type: none;
-    color: $font-color-sombre;
-}
-
-.section {
-    @include flex($direction: column, $justify: center, $align: initial);
-    @include spacing($padding: 50px 20px 70px, $gap: 20px);
-}
-
-.reserver {
-    @include flex($direction: column, $justify: center, $align: center);
-    @include spacing($padding: 20px);
-    background-color: $bg-section;
-    text-align: center;
-}
-
-.restaurants {
-    background-color: $bg-section;
-}
-
-.title {
-    @include spacing($margin: 20px 0 0 0, $padding: 0 30px);
-}
-
-.subtitle {
-    @include spacing($margin: 10px 0 0 0);
-    font-size: $size-18;
-    font-weight: $font-weight-subtitle;
-}
-
-.card-restaurants {
-    @include flex($direction: column, $justify: center, $align: inherit);
-    @include spacing($gap: 15px);
-}

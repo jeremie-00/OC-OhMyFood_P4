@@ -9,30 +9,33 @@ a {
     border-radius: $radius-card;
     background-color: $bg-card;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+
+    img {
+        @include set-size(100%, 170px);
+        border-radius: $radius-card $radius-card 0 0;
+        object-fit: cover;
+    }
+    .card-content {
+        @include flex($direction: row, $justify: center, $align: center);
+        @include spacing($padding: 0 12px 5px);
+    }
+    
+    .card-txt {
+        @include flex($direction: column, $justify: center, $align: start); 
+        @include spacing($padding: 12px 3px 15px, $gap: 2px);   
+        @include set-size(100%, auto);
+    }
+    
+    .card-title {
+        font-size: $size-18;
+    }
+    
+    .card-subtitle {
+        font-size: $size-subtitle-card;
+        font-weight: $font-weight-subtitle;
+    }
 }
 
-.card img {
-    @include set-size(100%, 170px);
-    border-radius: $radius-card $radius-card 0 0;
-    object-fit: cover;
-}
 
-.card-content {
-    @include flex($direction: row, $justify: center, $align: center);
-    @include spacing($padding: 0 12px 5px);
-}
 
-.card-txt {
-    @include flex($direction: column, $justify: center, $align: start); 
-    @include spacing($padding: 12px 3px 15px, $gap: 2px);   
-    @include set-size(100%, auto);
-}
 
-.card-title {
-    font-size: $size-18;
-}
-
-.card-subtitle {
-    font-size: $size-subtitle-card;
-    font-weight: $font-weight-subtitle;
-}

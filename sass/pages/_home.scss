@@ -1,0 +1,30 @@
+.section {
+    @include flex($direction: column, $justify: center, $align: initial);
+    @include spacing($padding: 50px 20px 70px, $gap: 20px);
+}
+
+.reserver {
+    @include flex($direction: column, $justify: center, $align: center);
+    @include spacing($padding: 20px);
+    background-color: $bg-section;
+    text-align: center;
+}
+
+.restaurants {
+    background-color: $bg-section;
+}
+
+.title {
+    @include spacing($margin: 20px 0 0 0, $padding: 0 30px);
+}
+
+.subtitle {
+    @include spacing($margin: 10px 0 0 0);
+    font-size: $size-18;
+    font-weight: $font-weight-subtitle;
+}
+
+.card-restaurants {
+    @include flex($direction: column, $justify: center, $align: inherit);
+    @include spacing($gap: 15px);
+}
