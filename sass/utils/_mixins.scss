@@ -5,6 +5,7 @@
   justify-content: $justify;
   align-items: $align;
 }
+
 // ESPACE
 @mixin spacing($margin: null, $padding: null, $gap: null) {
   @if $margin != null {
@@ -17,22 +18,4 @@
     gap: $gap;
   }
 }
-// TEXTE
-@mixin font-txt {
-  font-family: $font-txt;
-}
-@mixin font-title-logo {
-  font-family: $font-title-logo;
-}
-@mixin font-size($size: 16px) {
-  font-size: $size;
-}
-//BACKGROUND
-@mixin bg-section {
-  background-color: $bg-section;
-}
 
-//BORDER
-@mixin radius($radius) {
-  border-radius: $radius;
-}

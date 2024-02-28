@@ -3,23 +3,24 @@
     @include spacing($padding: 10px 0, $gap: 30px);
 
     & .wrapper {
-        @include flex($direction: row, $justify: center, $align: center);
-        @include bg-section;
+        @include flex($direction: row, $justify: center, $align: center); 
         @include spacing($margin: 0 0 0 10px);
-        @include radius($radius: 20px);
+        border-radius: $radius-card-fonctionnement;
+        background-color: $bg-section;
         box-shadow: $box-shadow-btn;
-        width: 323px;
+        width: 95%;
         height: 73px;
         border: none;
         position: relative;
-        width: 95%;
+       
 
         & .tag-num {
-            @include flex($direction: row, $justify: center, $align: center);
-            @include font-size($size: $size-tag);
+            @include flex($direction: row, $justify: center, $align: center);          
             @include spacing($padding: 3px 0 0 0);
-            @include radius($radius: 50px);
+            border-radius: $radius-tag-num;
+            font-size: $size-tag;
             background-color: $primaire;
+            font-weight: $font-weight-title;
             position: absolute;
             top: 25px;
             left: -12.5px;
@@ -32,8 +33,6 @@
             @include flex($direction: row, $justify: center, $align: baseline);
             @include spacing($gap: 10px);
             width: 100%;
-            
-
         }
 
         & .fa-solid {
@@ -46,7 +45,7 @@
 
         & h4 {
             @include flex($direction: row, $justify: center, $align: center);
-            font-weight: 500;
+            font-weight: $font-weight-title;
         }
     }
 }

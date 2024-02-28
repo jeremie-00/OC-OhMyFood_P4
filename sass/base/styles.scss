@@ -16,13 +16,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    @include font-txt;
+    font-family: $font-txt;
     list-style-type: none;
+    color: $font-color-sombre;
 }
-
-// i {
-//     width: 25px;
-// }
 
 .section {
     @include flex($direction: column, $justify: center, $align: initial);
@@ -32,24 +29,28 @@
 
 .reserver {
     @include flex($direction: column, $justify: center, $align: center);
-    @include bg-section;
     @include spacing($padding: 20px);
+    background-color: $bg-section;
     text-align: center;
 }
-
+.restaurants {
+    background-color: $bg-section;
+}
 .title {
     @include spacing($margin: 20px 0 0 0, $padding: 0 30px);
 }
 
 .subtitle {
-    @include font-size($size: 18px);
+    // @include font-size($size: 18px);
     @include spacing($margin: 10px 0 0 0);
-    font-weight: 300;
+    font-size: $size-18;
+    font-weight: $font-weight-subtitle;
 }
 
-.restaurants {
-    @include bg-section;
-}
+// .restaurants {
+//     // @include bg-section;
+//     background-color: $bg-section;
+// }
 
 .card-restaurants {
     @include flex($direction: column, $justify: center, $align: inherit);

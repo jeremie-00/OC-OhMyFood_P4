@@ -3,17 +3,17 @@
 }
 
 .btn {
-    @include font-size($size: $size-16);
     @include spacing($margin: 30px);
-    @include radius($radius: 25px);
+    font-size: $size-16;
+    border-radius: $radius-btn;
     color: $font-color-clair;
+    box-shadow: $box-shadow-btn; 
+    background-image: $bg-btn;
     width: 220px;
     height: 50px;
-    background-image: $bg-btn;
     cursor: pointer;
     border: none;
-    box-shadow: $box-shadow-btn; 
-    font-weight: 500;
+    font-weight: $font-weight-title;
     text-align: center;
     transition: all .3s ease-in-out; 
 
