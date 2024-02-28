@@ -11,8 +11,7 @@
 
 .contenaire-loader {
     @include flex($direction: row, $align: center, $justify: center);
-    width: 100vw;
-    height: 100vh;
+    @include set-size(100%, 100%);
     position: absolute;
     z-index: 9999;
     background-color: rgba($bg-section, 0.5);
@@ -26,16 +25,15 @@
     }
 
     & .loader {
+        @include set-size($size-loader, $size-loader);
         border: 10px solid;
         border-top-color: $primaire;
         border-bottom-color: $secondaire;
         border-radius: $radius-loader;
-        width: 180px;
-        height: 180px;
         border-right-color: transparent;
         border-left-color: transparent;
         animation: spin 1.2s infinite ease-in-out;
-        
+
         @keyframes spin {
             from {
                 transform: rotate(0)

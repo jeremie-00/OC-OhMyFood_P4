@@ -25,7 +25,6 @@
 .section {
     @include flex($direction: column, $justify: center, $align: initial);
     @include spacing($padding: 50px 20px 70px, $gap: 20px);
-    border: 2px solid rgb(236, 4, 4);
 }
 
 .reserver {
@@ -44,16 +43,10 @@
 }
 
 .subtitle {
-    // @include font-size($size: 18px);
     @include spacing($margin: 10px 0 0 0);
     font-size: $size-18;
     font-weight: $font-weight-subtitle;
 }
-
-// .restaurants {
-//     // @include bg-section;
-//     background-color: $bg-section;
-// }
 
 .card-restaurants {
     @include flex($direction: column, $justify: center, $align: inherit);

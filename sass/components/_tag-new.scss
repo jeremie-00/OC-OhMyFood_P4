@@ -1,13 +1,10 @@
 .tag-new {
+    @include set-size($width-tag-new, $height-tag-new);
     @include flex($direction: row, $justify: center, $align: center);
+    @include absolute($top: 12px,$right: 12px);
     border-radius: $radius-tag-new;
     font-size: $size-tag;
     font-weight: $font-weight-title;
     background-color: $bg-figcaption;
-    color: $txt-figcaption;   
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    width: 80px;
-    height: 29px;
+    color: $txt-figcaption; 
 }

@@ -19,3 +19,25 @@
   }
 }
 
+// TAILLE ELEMENT
+@mixin set-size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+// POSITION ABSOLUTE
+@mixin absolute($top: null,$left: null,$right: null,$bottom: null) {
+  position: absolute;
+  @if $top != null {
+    top: $top;
+  }
+  @if $left != null {
+    left: $left;
+  }
+  @if $right != null {
+    right: $right;
+  }
+  @if $bottom != null {
+    bottom: $bottom;
+  } 
+}

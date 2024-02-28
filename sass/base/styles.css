@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 .blurry {
   filter: blur(8px);
-  animation: blur-out 0.3s linear 2s forwards;
+  animation: blur-out 0.3s linear 0.3s forwards;
 }
 @keyframes blur-out {
   to {
@@ -15,12 +15,12 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   position: absolute;
   z-index: 9999;
   background-color: rgba(246, 246, 246, 0.5);
-  animation: fade-out 0.3s 2s forwards;
+  animation: fade-out 0.3s 0.3s forwards;
 }
 @keyframes fade-out {
   to {
@@ -29,12 +29,12 @@
   }
 }
 .contenaire-loader .loader {
+  width: 150px;
+  height: 150px;
   border: 10px solid;
   border-top-color: #9356DC;
   border-bottom-color: #FF79DA;
   border-radius: 50%;
-  width: 180px;
-  height: 180px;
   border-right-color: transparent;
   border-left-color: transparent;
   animation: spin 1.2s infinite ease-in-out;
@@ -60,35 +60,37 @@
   justify-content: center;
   align-items: center;
   padding: 15px 0 0 0;
-  height: 63px;
   width: 100%;
+  height: 63px;
   box-shadow: 0px 2px 3px 0px #b9b9b9;
   z-index: 1;
 }
 .header .logo img {
-  width: 162px;
+  width: 163px;
+  height: auto;
 }
 .header .search {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: #EAEAEA;
   width: 100%;
   height: 50px;
+  background-color: #EAEAEA;
   box-shadow: 0px 3px 5px 0px #acabab;
 }
 .header .search i {
   margin: 0 10px 0 0;
 }
 .header .search .input-search {
+  width: 110px;
+  height: auto;
   font-size: 16px;
   font-weight: 500;
   background: transparent;
   border: none;
   outline: none;
   text-align: center;
-  width: 110px;
 }
 
 .wrapper-btn {
@@ -99,14 +101,14 @@
 }
 
 .btn {
+  width: 220px;
+  height: 50px;
   margin: 30px;
   font-size: 16px;
   border-radius: 25px;
   color: white;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
   background-image: linear-gradient(-179deg, #FF79DA -25%, #9356DC 123.93%);
-  width: 220px;
-  height: 50px;
   cursor: pointer;
   border: none;
   font-weight: 500;
@@ -127,6 +129,8 @@
   gap: 30px;
 }
 .contenaire .wrapper {
+  width: 95%;
+  height: 73px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -135,27 +139,25 @@
   border-radius: 20px;
   background-color: #F6F6F6;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
-  width: 95%;
-  height: 73px;
   border: none;
   position: relative;
 }
 .contenaire .wrapper .tag-num {
+  width: 24px;
+  height: 24px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 3px 0 0 0;
   border-radius: 50px;
-  font-size: 14px;
-  background-color: #9356DC;
   font-weight: 500;
+  font-size: 14px;
+  color: white;
+  background-color: #9356DC;
   position: absolute;
   top: 25px;
   left: -12.5px;
-  color: white;
-  width: 24px;
-  height: 24px;
 }
 .contenaire .wrapper .content {
   display: flex;
@@ -164,6 +166,7 @@
   align-items: baseline;
   gap: 10px;
   width: 100%;
+  height: auto;
 }
 .contenaire .wrapper .fa-solid {
   color: grey;
@@ -196,9 +199,9 @@ a {
 }
 
 .card img {
-  border-radius: 15px 15px 0 0;
   width: 100%;
   height: 170px;
+  border-radius: 15px 15px 0 0;
   object-fit: cover;
 }
 
@@ -208,7 +211,6 @@ a {
   justify-content: center;
   align-items: center;
   padding: 0 12px 5px;
-  width: 100%;
 }
 
 .card-txt {
@@ -218,7 +220,8 @@ a {
   align-items: start;
   padding: 12px 3px 15px;
   gap: 2px;
-  flex: 1;
+  width: 100%;
+  height: auto;
 }
 
 .card-title {
@@ -231,20 +234,20 @@ a {
 }
 
 .tag-new {
+  width: 80px;
+  height: 29px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  top: 12px;
+  right: 12px;
   border-radius: 2px;
   font-size: 14px;
   font-weight: 500;
   background-color: #99E2D0;
   color: #008766;
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  width: 80px;
-  height: 29px;
 }
 
 .heart {
@@ -254,22 +257,25 @@ a {
 }
 .heart input[type=checkbox] {
   position: absolute;
+  top: 0;
+  left: 0;
   display: none;
 }
 .heart i {
+  width: auto;
+  height: 30px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   transition: opacity 0.5s ease;
-  height: 28px;
 }
 .heart .fa-solid {
-  opacity: 0;
   position: absolute;
-  left: 0;
   top: 0;
+  left: 0;
+  opacity: 0;
   color: transparent;
   background-image: linear-gradient(-193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   -webkit-background-clip: text;
@@ -329,7 +335,6 @@ a {
   align-items: initial;
   padding: 50px 20px 70px;
   gap: 20px;
-  border: 2px solid rgb(236, 4, 4);
 }
 
 .reserver {

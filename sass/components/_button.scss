@@ -3,14 +3,13 @@
 }
 
 .btn {
+    @include set-size($width-btn, $height-btn);
     @include spacing($margin: 30px);
     font-size: $size-16;
     border-radius: $radius-btn;
     color: $font-color-clair;
     box-shadow: $box-shadow-btn; 
     background-image: $bg-btn;
-    width: 220px;
-    height: 50px;
     cursor: pointer;
     border: none;
     font-weight: $font-weight-title;

@@ -3,36 +3,32 @@
     @include spacing($padding: 10px 0, $gap: 30px);
 
     & .wrapper {
+        @include set-size($width-wrapper-fonctionnement, $height-wrapper-fonctionnement);
         @include flex($direction: row, $justify: center, $align: center); 
         @include spacing($margin: 0 0 0 10px);
         border-radius: $radius-card-fonctionnement;
         background-color: $bg-section;
         box-shadow: $box-shadow-btn;
-        width: 95%;
-        height: 73px;
         border: none;
         position: relative;
        
 
         & .tag-num {
+            @include set-size($size-tag-num, $size-tag-num);
             @include flex($direction: row, $justify: center, $align: center);          
             @include spacing($padding: 3px 0 0 0);
             border-radius: $radius-tag-num;
-            font-size: $size-tag;
-            background-color: $primaire;
             font-weight: $font-weight-title;
-            position: absolute;
-            top: 25px;
-            left: -12.5px;
-            color: white;
-            width: 24px;
-            height: 24px;
+            font-size: $size-tag;
+            color: $font-color-clair;
+            background-color: $primaire;
+            @include absolute($top: 25px, $left: -12.5px);          
         }
 
         & .content {
             @include flex($direction: row, $justify: center, $align: baseline);
             @include spacing($gap: 10px);
-            width: 100%;
+            @include set-size(100%, auto);
         }
 
         & .fa-solid {

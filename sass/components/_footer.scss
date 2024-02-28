@@ -1,8 +1,7 @@
 .footer {
     @include flex($direction: column, $justify: center, $align: start);
     @include spacing($padding: 22px 25px, $gap: 16px);
-    background-color: #353535;
-    
+    background-color: $bg-footer; 
 
     & i {
         @include spacing($margin: 0 10px 0 0);

@@ -2,12 +2,15 @@
 
 
 //loader
-$time-load: 2s;
+$time-load: 0.3s;
 
 
 // COLOR
 $primaire: #9356DC;
 $secondaire: #FF79DA;
+
+$bg-search: #EAEAEA;
+$bg-footer: #353535;
 
 $bg-btn: linear-gradient(-179deg, $secondaire -25%, $primaire 123.93%);
 $box-shadow-btn: 0px 4px 10px 0px #00000040;
@@ -34,3 +37,25 @@ $radius-btn: 25px;
 $radius-tag-new: 2px;
 $radius-tag-num: 50px;
 $radius-loader: 50%;
+
+//TAILLE
+//header
+$height-div-logo: 63px;
+$width-img-logo: 163px;
+$height-div-search: 50px;
+$width-input-search: 110px;
+//coeur
+$size-heart: 30px;
+//loader
+$size-loader: 150px;
+// numero entourer
+$size-tag-num: 24px;
+// wrapper fonctionnement
+$width-wrapper-fonctionnement: 95%;
+$height-wrapper-fonctionnement: 73px;
+//etiquette nouveau
+$width-tag-new: 80px;
+$height-tag-new: 29px;
+// bouton
+$width-btn: 220px;
+$height-btn: 50px;
