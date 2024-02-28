@@ -2,6 +2,7 @@
 @import '../utils/fonts';
 @import '../utils/_mixins';
 
+@import '../components/_loader';
 @import '../components/_header';
 @import '../components/_button';
 @import '../components/_item-fonctionnement';
@@ -33,9 +34,11 @@
     background-color: $bg-section;
     text-align: center;
 }
+
 .restaurants {
     background-color: $bg-section;
 }
+
 .title {
     @include spacing($margin: 20px 0 0 0, $padding: 0 30px);
 }
@@ -56,7 +59,3 @@
     @include flex($direction: column, $justify: center, $align: inherit);
     @include spacing($gap: 15px);
 }
-
-
-
-
