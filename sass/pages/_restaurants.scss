@@ -1,38 +1,87 @@
-
-
-
-.restaurant{
+.restaurant {
     img {
         @include set-size(105%, 275px);
         object-fit: cover;
         position: relative;
         z-index: -1;
     }
-    .header-menu{
-        @include flex($direction: row, $justify: center, $align: center);
-        margin-top: 50px;
-    }
-    .name{
-        font-family: $font-title-logo;
-        font-size: $size-title-restaurants;
-        width: 90%;
-    }
-    .menu{
-        @include flex($direction: column, $justify: unset, $align: unset);
-        border-radius: 50px;
-        background-color: brown;
+
+    .menus {
+        @include flex($direction: column, $justify: center, $align: center);
+        border-radius: 40px;
+        background-color: $bg-section;
         margin-top: -50px;
-    }
 
-    .card {
-        @include flex($direction: column, $justify: center, $align: initial);  
-        border-radius: $radius-card;
-        background-color: $bg-card;
-        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+        .header-menu {
+            @include flex($direction: row, $justify: start, $align: center);
+            margin-top: 30px;
+            width: 341px;
+            font-weight: 500;
 
-        .card-subtitle {
-            @include flex($direction: row, $justify: space-between, $align: center);
-            @include set-size(100%, auto);
+            .name {
+                font-family: $font-title-logo;
+                font-size: $size-title-restaurants;
+                width: 85%;
+                font-weight: 500;
+            }
+        
+        }
+
+        .wrapper-menu {
+            @include flex($direction: column, $justify: center, $align: start);
+            width: 100%;
+            padding: 10px;
+            gap: 40px;
+            margin-top: 30px;
+
+            .menu {
+                @include flex($direction: column, $justify: center, $align: start);
+                gap: 10px;
+                width: 100%;
+
+
+                h4 {
+                    font-weight: 300;
+                    @include flex($direction: column, $justify: unset, $align: unset);
+                    width: 100%;
+                    gap: 5px;
+                    text-transform: uppercase;
+                    
+                    & .line {
+                        width: 10%;
+                        height: 3px;
+                        background-color: $bg-figcaption;
+                    }
+                }
+                .card {
+                    width: 100%;
+                    @include flex($direction: column, $justify: center, $align: initial);
+                    border-radius: $radius-card;
+                    background-color: $bg-card;
+                    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+                    cursor: pointer;
+                    
+                    .card-txt {
+                        padding: 15px;
+                    }
+
+                    .card-subtitle {
+                        @include flex($direction: row, $justify: space-between, $align: center);
+                        @include set-size(100%, auto);
+                        font-size: 15px;
+            
+                        .prix {
+                            font-weight: bold;
+                        }
+                    }
+                }
+
+            }
         }
     }
+
+    .btn {
+        width: 186px;
+    }
+
 }

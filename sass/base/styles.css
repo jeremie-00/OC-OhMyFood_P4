@@ -58,28 +58,65 @@
   position: relative;
   z-index: -1;
 }
-.restaurant .header-menu {
+.restaurant .menus {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  border-radius: 40px;
+  background-color: #F6F6F6;
+  margin-top: -50px;
 }
-.restaurant .name {
+.restaurant .menus .header-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  margin-top: 30px;
+  width: 341px;
+  font-weight: 500;
+}
+.restaurant .menus .header-menu .name {
   font-family: "Shrikhand", sans-serif;
   font-size: 28px;
-  width: 90%;
+  width: 85%;
+  font-weight: 500;
 }
-.restaurant .menu {
+.restaurant .menus .wrapper-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  padding: 10px;
+  gap: 40px;
+  margin-top: 30px;
+}
+.restaurant .menus .wrapper-menu .menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+  width: 100%;
+}
+.restaurant .menus .wrapper-menu .menu h4 {
+  font-weight: 300;
   display: flex;
   flex-direction: column;
   justify-content: unset;
   align-items: unset;
-  border-radius: 50px;
-  background-color: brown;
-  margin-top: -50px;
+  width: 100%;
+  gap: 5px;
+  text-transform: uppercase;
 }
-.restaurant .card {
+.restaurant .menus .wrapper-menu .menu h4 .line {
+  width: 10%;
+  height: 3px;
+  background-color: #99E2D0;
+}
+.restaurant .menus .wrapper-menu .menu .card {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -87,14 +124,25 @@
   border-radius: 15px;
   background-color: white;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  cursor: pointer;
 }
-.restaurant .card .card-subtitle {
+.restaurant .menus .wrapper-menu .menu .card .card-txt {
+  padding: 15px;
+}
+.restaurant .menus .wrapper-menu .menu .card .card-subtitle {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   height: auto;
+  font-size: 15px;
+}
+.restaurant .menus .wrapper-menu .menu .card .card-subtitle .prix {
+  font-weight: bold;
+}
+.restaurant .btn {
+  width: 186px;
 }
 
 .blurry {
@@ -234,7 +282,7 @@
 }
 
 .btn {
-  width: 220px;
+  width: 218px;
   height: 50px;
   margin: 30px;
   font-size: 16px;
