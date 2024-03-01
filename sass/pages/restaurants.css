@@ -149,9 +149,7 @@ body {
 }
 
 .heart {
-  position: absolute;
-  right: 20px;
-  bottom: 32px;
+  position: relative;
 }
 .heart input[type=checkbox] {
   position: absolute;

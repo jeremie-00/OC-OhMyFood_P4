@@ -1,6 +1,7 @@
 .heart {
-    @include absolute($right: 20px,$bottom: 32px);
-
+   // @include absolute($right: 20px,$bottom: 32px);
+    position: relative;
+    
     input[type="checkbox"] {
         @include absolute($top: 0,$left: 0);
         display: none;
