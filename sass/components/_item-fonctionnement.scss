@@ -22,7 +22,8 @@
             font-size: $size-tag;
             color: $font-color-clair;
             background-color: $primaire;
-            @include absolute($top: 25px, $left: -12.5px);          
+            @include absolute($top: 25px, $left: -12.5px); 
+            cursor: default;         
         }
 
         & .content {

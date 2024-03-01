@@ -1,3 +1,5 @@
+
+
 .section {
     @include flex($direction: column, $justify: center, $align: initial);
     @include spacing($padding: 50px 20px 70px, $gap: 20px);
@@ -22,6 +24,7 @@
     @include spacing($margin: 10px 0 0 0);
     font-size: $size-18;
     font-weight: $font-weight-subtitle;
+    cursor: default;
 }
 
 .card-restaurants {
