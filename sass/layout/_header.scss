@@ -34,7 +34,7 @@
     }
 
     & a {
-        $size: 22px;
+        $size: 25px;
         @include absolute($top: $size, $left: $size);
     }
     
