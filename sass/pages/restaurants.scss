@@ -16,7 +16,7 @@
 
 .restaurant {
     img {
-        @include set-size(105%, 275px);
+        @include set-size(100%, 275px);
         //@include set-size(105%, auto);
         object-fit: cover;
         position: relative;
