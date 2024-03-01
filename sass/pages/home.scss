@@ -1,3 +1,23 @@
+@import '../base/fonts';
+@import '../base/reset';
+
+@import '../utils/_variables';
+@import '../utils/_mixins';
+@import '../utils/_extend';
+
+@import '../base/normalize';
+
+@import '../layout/_loader';
+@import '../layout/_header';
+@import '../layout/_footer';
+
+
+@import '../components/_button';
+@import '../components/_item-fonctionnement';
+@import '../components/_card';
+@import '../components/_tag-new';
+@import '../components/_heart';
+
 
 
 .section {

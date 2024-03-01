@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" type="text/css" href="sass/base/styles.css">
+    <link rel="stylesheet" type="text/css" href="sass/pages/home.css">
 
     <title>OhMyFood</title>
 </head>
@@ -19,7 +19,7 @@
     <div class="blurry">
         <header class="header">
             <div class="logo">
-                <img src="./Images et textes Ohmyfood/images/logo/ohmyfood.png" alt="OhMyFood - Home">
+                <img src="./Images-et-textes-Ohmyfood/images/logo/ohmyfood.png" alt="OhMyFood - Home">
             </div>
 
             <div class="search">
@@ -37,7 +37,7 @@
         </section>
 
         <section class="section">
-            <h1>Fonctionnement</h1>
+            <h2>Fonctionnement</h2>
             <div class="contenaire">
                 <div class="wrapper">
                     <span class="tag-num">1</span>
@@ -66,10 +66,11 @@
         <section class="section restaurants">
             <h1>Restaurants</h1>
             <div class="card-restaurants">
-                <a href="restaurants/la-palette-du-gout.html">
-                    <article class="card">
+
+                <article class="card">
+                    <a href="restaurants/la-palette-du-gout.html">
                         <figure>
-                            <img src="./Images et textes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                            <img src="./Images-et-textes-Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
                                 alt="Image d'un plat'">
                             <figcaption class="tag-new">Nouveau</figcaption>
                         </figure>
@@ -78,35 +79,40 @@
                                 <h3 class="card-title">La palette du goût</h3>
                                 <p class="card-subtitle">Ménilmontant</p>
                             </div>
-                            <div class="heart">
-                                <input type="checkbox" id="heart-checkbox-1">
-                                <label for="heart-checkbox-1">
-                                    <i class="fa-regular fa-heart fa-xl"></i>
-                                    <i class="fa-solid fa-heart fa-xl"></i>
-                                </label>
-                            </div>
+
                         </div>
-                    </article>
-                </a>
-                <a href="#">
-                    <article class="card">
-                        <img src="./Images et textes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                    </a>
+                    <div class="heart">
+                        <input type="checkbox" id="heart-checkbox-1" title="coeur">
+                        <label for="heart-checkbox-1">
+                            <i class="fa-regular fa-heart fa-xl"></i>
+                            <i class="fa-solid fa-heart fa-xl"></i>
+                        </label>
+                    </div>
+                </article>
+
+
+                <article class="card">
+                    <a href="restaurants/la-palette-du-gout.html">
+                        <img src="./Images-et-textes-Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
                             alt="Image d'un plat">
                         <div class="card-content ">
                             <div class="card-txt">
                                 <h3 class="card-title">La palette du goût</h3>
                                 <p class="card-subtitle">Ménilmontant</p>
                             </div>
-                            <div class="heart">
-                                <input type="checkbox" id="heart-checkbox-2">
-                                <label for="heart-checkbox-2">
-                                    <i class="fa-regular fa-heart fa-xl"></i>
-                                    <i class="fa-solid fa-heart fa-xl"></i>
-                                </label>
-                            </div>
+
                         </div>
-                    </article>
-                </a>
+                    </a>
+                    <div class="heart">
+                        <input type="checkbox" id="heart-checkbox-2" title="coeur">
+                        <label for="heart-checkbox-2">
+                            <i class="fa-regular fa-heart fa-xl"></i>
+                            <i class="fa-solid fa-heart fa-xl"></i>
+                        </label>
+                    </div>
+                </article>
+
             </div>
         </section>
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -7,232 +7,228 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" type="text/css" href="../sass/base/styles.css">
+    <link rel="stylesheet" type="text/css" href="../sass/pages/restaurants.css">
     <title>La palette du goût</title>
 </head>
 
 <body>
-    <div class="contenaire-loader">
-        <div class="loader"></div>
-    </div>
 
-    <div class="blurry">
-        <header class="header">
-            <div class="logo">
-                <a href="/"><i class="fa-solid fa-arrow-left fa-lg"></i></a>
-                <img src="../Images et textes Ohmyfood/images/logo/ohmyfood.png" alt="OhMyFood - Home">
+    <header class="header">
+        <div class="logo">
+            <a href="/"><i class="fa-solid fa-arrow-left fa-lg"></i></a>
+            <img src="../Images-et-textes-Ohmyfood/images/logo/ohmyfood.png" alt="OhMyFood - Home">
+        </div>
+    </header>
+
+
+
+    <section class="restaurant">
+
+        <img src="../Images-et-textes-Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+            alt="Image d'un plat'">
+
+        <div class="menus">
+            <div class="header-menu">
+                <h1 class="name">La palette du goût </h1>
+                <div class="heart">
+                    <input type="checkbox" id="heart-checkbox-1">
+                    <label for="heart-checkbox-1">
+                        <i class="fa-regular fa-heart fa-xl"></i>
+                        <i class="fa-solid fa-heart fa-xl"></i>
+                    </label>
+                </div>
             </div>
-        </header>
+            <div class="wrapper-menu">
 
+                <div class="menu">
+                    <h4 class="majuscule">Entrées<span class="line"></span></h4>
 
-
-        <section class="restaurant">
-
-            <img src="../Images et textes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                alt="Image d'un plat'">
-
-            <div class="menus">
-                <div class="header-menu">
-                    <h1 class="name">La palette du goût </h1>
-                    <div class="heart">
-                        <input type="checkbox" id="heart-checkbox-1">
-                        <label for="heart-checkbox-1">
-                            <i class="fa-regular fa-heart fa-xl"></i>
-                            <i class="fa-solid fa-heart fa-xl"></i>
-                        </label>
-                    </div>
-                </div>
-                <div class="wrapper-menu">
-
-                    <div class="menu">
-                        <h4 class="majuscule">Entrées<span class="line"></span></h4>
-
-                        <div class="card-menu">
-                            <input type="checkbox" id="entree-1">
-                            <label for="entree-1" class="label" title="Fricassée d'escargots"></label>
-                            <div class="card-content-menu">
-                                <div class="txt">
-                                    <h2 class="card-title elipse">Fricassée d'escargots</h2>
-                                    <h4 class="card-subtitle elipse">Au piment d'Espelette</h4>
-                                </div>
-                                <div class="prix">
-                                    35€
-                                </div>
+                    <div class="card-menu">
+                        <input type="checkbox" id="entree-1">
+                        <label for="entree-1" class="label" title="Fricassée d'escargots"></label>
+                        <div class="card-content-menu">
+                            <div class="txt">
+                                <h2 class="card-title elipse">Fricassée d'escargots</h2>
+                                <h4 class="card-subtitle elipse">Au piment d'Espelette</h4>
                             </div>
-                            <div class="selected">
-                                <i class="fa-solid fa-circle-check fa-lg"></i>
+                            <div class="prix">
+                                35€
                             </div>
                         </div>
-
-                        <div class="card-menu">
-                            <input type="checkbox" id="entree-2">
-                            <label for="entree-2" class="label" title="Fricassée d'escargots"></label>
-                            <div class="card-content-menu">
-                                <div class="txt">
-                                    <h2 class="card-title elipse">Fricassée d'escargots</h2>
-                                    <h4 class="card-subtitle elipse">Au piment d'Espelette</h4>
-                                </div>
-                                <div class="prix">
-                                    35€
-                                </div>
-                            </div>
-                            <div class="selected">
-                                <i class="fa-solid fa-circle-check fa-lg"></i>
-                            </div>
+                        <div class="selected">
+                            <i class="fa-solid fa-circle-check fa-lg"></i>
                         </div>
-
-                        <div class="card-menu">
-                            <input type="checkbox" id="entree-3">
-                            <label for="entree-3" class="label" title="Fricassée d'escargots"></label>
-                            <div class="card-content-menu">
-                                <div class="txt">
-                                    <h2 class="card-title elipse">Fricassée d'escargots</h2>
-                                    <h4 class="card-subtitle elipse">Au piment d'Espelette</h4>
-                                </div>
-                                <div class="prix">
-                                    35€
-                                </div>
-                            </div>
-                            <div class="selected">
-                                <i class="fa-solid fa-circle-check fa-lg"></i>
-                            </div>
-                        </div>
-
                     </div>
 
-                    <div class="menu">
-                        <h4 class="majuscule">Plats<span class="line"></span></h4>
-
-                        <div class="card-menu">
-                            <input type="checkbox" id="plat-1">
-                            <label for="plat-1" class="label" title="Fricassée d'escargots"></label>
-                            <div class="card-content-menu">
-                                <div class="txt">
-                                    <h2 class="card-title elipse">Fricassée d'escargots</h2>
-                                    <h4 class="card-subtitle elipse">Au piment d'Espelette</h4>
-                                </div>
-                                <div class="prix">
-                                    35€
-                                </div>
+                    <div class="card-menu">
+                        <input type="checkbox" id="entree-2">
+                        <label for="entree-2" class="label" title="Fricassée d'escargots"></label>
+                        <div class="card-content-menu">
+                            <div class="txt">
+                                <h2 class="card-title elipse">Fricassée d'escargots</h2>
+                                <h4 class="card-subtitle elipse">Au piment d'Espelette</h4>
                             </div>
-                            <div class="selected">
-                                <i class="fa-solid fa-circle-check fa-lg"></i>
+                            <div class="prix">
+                                35€
                             </div>
                         </div>
-
-                        <div class="card-menu">
-                            <input type="checkbox" id="plat-2">
-                            <label for="plat-2" class="label" title="Fricassée d'escargots"></label>
-                            <div class="card-content-menu">
-                                <div class="txt">
-                                    <h2 class="card-title elipse">Fricassée d'escargots</h2>
-                                    <h4 class="card-subtitle elipse">Au piment d'Espelette</h4>
-                                </div>
-                                <div class="prix">
-                                    35€
-                                </div>
-                            </div>
-                            <div class="selected">
-                                <i class="fa-solid fa-circle-check fa-lg"></i>
-                            </div>
+                        <div class="selected">
+                            <i class="fa-solid fa-circle-check fa-lg"></i>
                         </div>
-
-                        <div class="card-menu">
-                            <input type="checkbox" id="plat-3">
-                            <label for="plat-3" class="label" title="Fricassée d'escargots"></label>
-                            <div class="card-content-menu">
-                                <div class="txt">
-                                    <h2 class="card-title elipse">Fricassée d'escargots</h2>
-                                    <h4 class="card-subtitle elipse">Au piment d'Espelette</h4>
-                                </div>
-                                <div class="prix">
-                                    35€
-                                </div>
-                            </div>
-                            <div class="selected">
-                                <i class="fa-solid fa-circle-check fa-lg"></i>
-                            </div>
-                        </div>
-
                     </div>
 
-                    <div class="menu">
-                        <h4 class="majuscule">Desserts<span class="line"></span></h4>
-                        <div class="card-menu">
-                            <input type="checkbox" id="dessert-1">
-                            <label for="dessert-1" class="label" title="Fricassée d'escargots"></label>
-                            <div class="card-content-menu">
-                                <div class="txt">
-                                    <h2 class="card-title elipse">Fricassée d'escargots</h2>
-                                    <h4 class="card-subtitle elipse">Au piment d'Espelette</h4>
-                                </div>
-                                <div class="prix">
-                                    35€
-                                </div>
+                    <div class="card-menu">
+                        <input type="checkbox" id="entree-3">
+                        <label for="entree-3" class="label" title="Fricassée d'escargots"></label>
+                        <div class="card-content-menu">
+                            <div class="txt">
+                                <h2 class="card-title elipse">Fricassée d'escargots</h2>
+                                <h4 class="card-subtitle elipse">Au piment d'Espelette</h4>
                             </div>
-                            <div class="selected">
-                                <i class="fa-solid fa-circle-check fa-lg"></i>
+                            <div class="prix">
+                                35€
                             </div>
                         </div>
-
-                        <div class="card-menu">
-                            <input type="checkbox" id="dessert-2">
-                            <label for="dessert-2" class="label" title="Fricassée d'escargots"></label>
-                            <div class="card-content-menu">
-                                <div class="txt">
-                                    <h2 class="card-title elipse">Fricassée d'escargots</h2>
-                                    <h4 class="card-subtitle elipse">Au piment d'Espelette</h4>
-                                </div>
-                                <div class="prix">
-                                    35€
-                                </div>
-                            </div>
-                            <div class="selected">
-                                <i class="fa-solid fa-circle-check fa-lg"></i>
-                            </div>
+                        <div class="selected">
+                            <i class="fa-solid fa-circle-check fa-lg"></i>
                         </div>
-
-                        <div class="card-menu">
-                            <input type="checkbox" id="dessert-3">
-                            <label for="dessert-3" class="label" title="Fricassée d'escargots"></label>
-                            <div class="card-content-menu">
-                                <div class="txt">
-                                    <h2 class="card-title elipse">Fricassée d'escargots</h2>
-                                    <h4 class="card-subtitle elipse">Au piment d'Espelette</h4>
-                                </div>
-                                <div class="prix">
-                                    35€
-                                </div>
-                            </div>
-                            <div class="selected">
-                                <i class="fa-solid fa-circle-check fa-lg"></i>
-                            </div>
-                        </div>
-
                     </div>
+
                 </div>
 
-                <div class="wrapper-btn">
-                    <button type="submit" class="btn">Commander</button>
+                <div class="menu">
+                    <h4 class="majuscule">Plats<span class="line"></span></h4>
+
+                    <div class="card-menu">
+                        <input type="checkbox" id="plat-1">
+                        <label for="plat-1" class="label" title="Fricassée d'escargots"></label>
+                        <div class="card-content-menu">
+                            <div class="txt">
+                                <h2 class="card-title elipse">Fricassée d'escargots</h2>
+                                <h4 class="card-subtitle elipse">Au piment d'Espelette</h4>
+                            </div>
+                            <div class="prix">
+                                35€
+                            </div>
+                        </div>
+                        <div class="selected">
+                            <i class="fa-solid fa-circle-check fa-lg"></i>
+                        </div>
+                    </div>
+
+                    <div class="card-menu">
+                        <input type="checkbox" id="plat-2">
+                        <label for="plat-2" class="label" title="Fricassée d'escargots"></label>
+                        <div class="card-content-menu">
+                            <div class="txt">
+                                <h2 class="card-title elipse">Fricassée d'escargots</h2>
+                                <h4 class="card-subtitle elipse">Au piment d'Espelette</h4>
+                            </div>
+                            <div class="prix">
+                                35€
+                            </div>
+                        </div>
+                        <div class="selected">
+                            <i class="fa-solid fa-circle-check fa-lg"></i>
+                        </div>
+                    </div>
+
+                    <div class="card-menu">
+                        <input type="checkbox" id="plat-3">
+                        <label for="plat-3" class="label" title="Fricassée d'escargots"></label>
+                        <div class="card-content-menu">
+                            <div class="txt">
+                                <h2 class="card-title elipse">Fricassée d'escargots</h2>
+                                <h4 class="card-subtitle elipse">Au piment d'Espelette</h4>
+                            </div>
+                            <div class="prix">
+                                35€
+                            </div>
+                        </div>
+                        <div class="selected">
+                            <i class="fa-solid fa-circle-check fa-lg"></i>
+                        </div>
+                    </div>
+
                 </div>
 
+                <div class="menu">
+                    <h4 class="majuscule">Desserts<span class="line"></span></h4>
+                    <div class="card-menu">
+                        <input type="checkbox" id="dessert-1">
+                        <label for="dessert-1" class="label" title="Fricassée d'escargots"></label>
+                        <div class="card-content-menu">
+                            <div class="txt">
+                                <h2 class="card-title elipse">Fricassée d'escargots</h2>
+                                <h4 class="card-subtitle elipse">Au piment d'Espelette</h4>
+                            </div>
+                            <div class="prix">
+                                35€
+                            </div>
+                        </div>
+                        <div class="selected">
+                            <i class="fa-solid fa-circle-check fa-lg"></i>
+                        </div>
+                    </div>
+
+                    <div class="card-menu">
+                        <input type="checkbox" id="dessert-2">
+                        <label for="dessert-2" class="label" title="Fricassée d'escargots"></label>
+                        <div class="card-content-menu">
+                            <div class="txt">
+                                <h2 class="card-title elipse">Fricassée d'escargots</h2>
+                                <h4 class="card-subtitle elipse">Au piment d'Espelette</h4>
+                            </div>
+                            <div class="prix">
+                                35€
+                            </div>
+                        </div>
+                        <div class="selected">
+                            <i class="fa-solid fa-circle-check fa-lg"></i>
+                        </div>
+                    </div>
+
+                    <div class="card-menu">
+                        <input type="checkbox" id="dessert-3">
+                        <label for="dessert-3" class="label" title="Fricassée d'escargots"></label>
+                        <div class="card-content-menu">
+                            <div class="txt">
+                                <h2 class="card-title elipse">Fricassée d'escargots</h2>
+                                <h4 class="card-subtitle elipse">Au piment d'Espelette</h4>
+                            </div>
+                            <div class="prix">
+                                35€
+                            </div>
+                        </div>
+                        <div class="selected">
+                            <i class="fa-solid fa-circle-check fa-lg"></i>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-        </section>
+
+            <div class="wrapper-btn">
+                <button type="submit" class="btn">Commander</button>
+            </div>
+
+        </div>
+    </section>
 
 
 
-        <footer class="footer">
-            <h4>ohmyfood</h4>
-            <ul class="liste-footer">
-                <li><a href="#" target="_blank"><i class="fa-solid fa-utensils fa-sm"></i>Proposer un restaurant</a>
-                </li>
-                <li><a href="#" target="_blank"><i class="fa-solid fa-handshake-angle fa-xs"></i>Devenir partenaire</a>
-                </li>
-                <li><a href="#" target="_blank">Mention légales</a></li>
-                <li><a href="#" target="_blank">Contact</a></li>
-            </ul>
-        </footer>
-    </div>
+    <footer class="footer">
+        <h4>ohmyfood</h4>
+        <ul class="liste-footer">
+            <li><a href="#" target="_blank"><i class="fa-solid fa-utensils fa-sm"></i>Proposer un restaurant</a>
+            </li>
+            <li><a href="#" target="_blank"><i class="fa-solid fa-handshake-angle fa-xs"></i>Devenir partenaire</a>
+            </li>
+            <li><a href="#" target="_blank">Mention légales</a></li>
+            <li><a href="#" target="_blank">Contact</a></li>
+        </ul>
+    </footer>
+
 </body>
 
 </html>

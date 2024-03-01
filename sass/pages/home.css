@@ -13,7 +13,7 @@ h1, h4 {
   cursor: default;
 }
 
-.style-card, .card-menu, .card {
+.style-card, .card {
   border-radius: 15px;
   background-color: white;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
@@ -32,138 +32,12 @@ body {
   font-size: 18px;
 }
 
-.bg-grey, .restaurant .menus, .restaurants, .reserver {
+.bg-grey, .restaurants, .reserver {
   background-color: #F6F6F6;
 }
 
-.bg-green, .tag-new, .restaurant .menus .wrapper-menu .menu .majuscule .line {
+.bg-green, .tag-new {
   background-color: #99E2D0;
-}
-
-.section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: initial;
-  padding: 50px 20px 70px;
-  gap: 20px;
-}
-
-.reserver {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  text-align: center;
-}
-
-.title {
-  margin: 20px 0 0 0;
-  padding: 0 30px;
-}
-
-.subtitle {
-  margin: 10px 0 0 0;
-  cursor: default;
-}
-
-.card-restaurants {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: inherit;
-  gap: 15px;
-}
-
-.restaurant img {
-  width: 105%;
-  height: 275px;
-  object-fit: cover;
-  position: relative;
-  z-index: -1;
-}
-.restaurant .menus {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: -50px 0 0 0;
-  border-radius: 40px;
-  flex: 1;
-}
-.restaurant .menus .header-menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: auto;
-  margin: 30px 0 0 0;
-  padding: 0 20px 0 10px;
-}
-.restaurant .menus .header-menu .name {
-  font-family: "Shrikhand", sans-serif;
-  font-size: 28px;
-  font-weight: 500;
-}
-.restaurant .menus .wrapper-menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  width: 100%;
-  height: auto;
-  margin: 30px 0 0 0;
-  padding: 10px;
-  gap: 40px;
-}
-.restaurant .menus .wrapper-menu .menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  width: 100%;
-  height: auto;
-  gap: 10px;
-}
-.restaurant .menus .wrapper-menu .menu .majuscule {
-  font-weight: 300;
-  display: flex;
-  flex-direction: column;
-  justify-content: unset;
-  align-items: unset;
-  width: 100%;
-  height: auto;
-  gap: 5px;
-  text-transform: uppercase;
-}
-.restaurant .menus .wrapper-menu .menu .majuscule .line {
-  width: 40px;
-  height: 3px;
-}
-.restaurant .btn {
-  width: 186px;
-  height: 50px;
-}
-
-@keyframes slide-in-right {
-  to {
-    transform: translateX(0);
-  }
-}
-.animate, .card-menu, .restaurant .menus .wrapper-menu .menu {
-  transform: translateX(100%);
-  animation: slide-in-right 1.2s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
-}
-.animate:nth-child(2), .card-menu:nth-child(2), .restaurant .menus .wrapper-menu .menu:nth-child(2) {
-  animation-delay: 0.2s;
-}
-.animate:nth-child(3), .card-menu:nth-child(3), .restaurant .menus .wrapper-menu .menu:nth-child(3) {
-  animation-delay: 0.4s;
-}
-.animate:nth-child(4), .card-menu:nth-child(4), .restaurant .menus .wrapper-menu .menu:nth-child(4) {
-  animation-delay: 0.6s;
 }
 
 .blurry {
@@ -181,9 +55,9 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
-  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
   z-index: 9999;
   background-color: rgba(246, 246, 246, 0.5);
   animation: fade-out 0.3s 3s forwards;
@@ -439,8 +313,9 @@ a {
 }
 
 .heart {
-  position: relative;
-  align-self: center;
+  position: absolute;
+  right: 20px;
+  bottom: 32px;
 }
 .heart input[type=checkbox] {
   position: absolute;
@@ -456,7 +331,7 @@ a {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  transition: opacity 0.5s ease;
+  transition: opacity 1.2s ease;
 }
 .heart .fa-solid {
   position: absolute;
@@ -475,75 +350,40 @@ a {
   opacity: 0;
 }
 
-.card-menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  align-items: center;
-  width: 100%;
-  height: 70px;
-}
-.card-menu .label {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-  z-index: 1;
-}
-.card-menu input {
-  display: none;
-}
-.card-menu .card-content-menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 0;
-  height: 100%;
-  flex: 1;
-}
-.card-menu .card-content-menu .txt {
+.section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
-  padding: 15px;
-  gap: 2px;
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-}
-.card-menu .card-content-menu .txt .elipse {
-  width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.card-menu .card-content-menu .prix {
-  padding: 30px 15px 0 0;
-  font-weight: bold;
-}
-.card-menu .selected {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 0;
-  height: 100%;
-  background-color: #99E2D0;
-  border-radius: 0 15px 15px 0;
-  transition: width 0.5s ease-in-out;
-}
-.card-menu .selected i {
-  color: white;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
-.card-menu input[type=checkbox]:checked ~ .selected {
-  width: 60px;
-}
-.card-menu input[type=checkbox]:checked ~ .selected i {
-  opacity: 1;
+  align-items: initial;
+  padding: 50px 20px 70px;
+  gap: 20px;
 }
 
-/*# sourceMappingURL=styles.css.map */
+.reserver {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  margin: 20px 0 0 0;
+  padding: 0 30px;
+}
+
+.subtitle {
+  margin: 10px 0 0 0;
+  cursor: default;
+}
+
+.card-restaurants {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: inherit;
+  gap: 15px;
+}
+
+/*# sourceMappingURL=home.css.map */
