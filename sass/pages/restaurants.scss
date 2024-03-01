@@ -5,7 +5,7 @@
 @import '../utils/_mixins';
 @import '../utils/_extend';
 
-@import '../base/normalize';
+@import '../base/_normalize';
 
 @import '../layout/_header';
 @import '../layout/_footer';
@@ -59,6 +59,7 @@
                 @extend .animate;
 
                .majuscule {
+                    font-size: $size-16;
                     font-weight: $font-weight-subtitle;
                     @include flex($direction: column, $justify: unset, $align: unset);
                     @include set-size(100%, auto);

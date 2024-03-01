@@ -5,7 +5,7 @@
 @import '../utils/_mixins';
 @import '../utils/_extend';
 
-@import '../base/normalize';
+@import '../base/_normalize';
 
 @import '../layout/_loader';
 @import '../layout/_header';
@@ -42,7 +42,8 @@
 
 .subtitle {
     @include spacing($margin: 10px 0 0 0);
-    @extend .card-subtitle;
+    font-size: $size-18;
+    font-weight: $font-weight-subtitle;
     cursor: default;
 }
 

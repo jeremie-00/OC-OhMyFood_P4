@@ -40,9 +40,11 @@
             color: $primaire;
         }
 
-        & h4 {
+        & h3 {
             @include flex($direction: row, $justify: center, $align: center);
             font-weight: $font-weight-title;
+            font-size: $size-16;
+            cursor: default;
         }
     }
 }

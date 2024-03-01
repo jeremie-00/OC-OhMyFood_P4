@@ -6,13 +6,13 @@
         @include spacing($margin: 0 10px 0 0);
     }
 
-    & h4 {
+    & h2 {
         font-size: $size-18;
         font-family: $font-title-logo;
         font-weight: $font-weight-title-footer;
     }
 
-    & li, h4, i {
+    & li, h2, i {
         color: $font-color-clair;
     }
 
