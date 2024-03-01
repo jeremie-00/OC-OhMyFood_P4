@@ -27,13 +27,14 @@
         }
 
         & .content {
-            @include flex($direction: row, $justify: center, $align: baseline);
-            @include spacing($gap: 10px);
+            @include flex($direction: row, $justify: start, $align: baseline);
+            @include spacing($gap: 20px);
             @include set-size(100%, auto);
         }
 
         & .fa-solid {
             color: grey;
+            margin-left: 35px;
         }
 
         & .fa-store {
@@ -45,6 +46,7 @@
             font-weight: $font-weight-title;
             font-size: $size-16;
             cursor: default;
+            //margin-left: 25px;
         }
     }
 }
