@@ -8,12 +8,12 @@
 .reserver {
     @include flex($direction: column, $justify: center, $align: center);
     @include spacing($padding: 20px);
-    background-color: $bg-section;
+    @extend .bg-grey;
     text-align: center;
 }
 
 .restaurants {
-    background-color: $bg-section;
+    @extend .bg-grey;
 }
 
 .title {
@@ -22,8 +22,7 @@
 
 .subtitle {
     @include spacing($margin: 10px 0 0 0);
-    font-size: $size-18;
-    font-weight: $font-weight-subtitle;
+    @extend .card-subtitle;
     cursor: default;
 }
 

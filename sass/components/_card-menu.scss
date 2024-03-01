@@ -2,7 +2,9 @@
     @include flex($direction: row, $justify: start, $align: center);
     @include set-size(100%, 70px);
     @extend .style-card;
-
+    @extend .animate;
+    
+    
     .label {
         position: absolute;
         width: 100%;

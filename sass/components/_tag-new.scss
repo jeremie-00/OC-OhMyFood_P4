@@ -2,9 +2,9 @@
     @include set-size($width-tag-new, $height-tag-new);
     @include flex($direction: row, $justify: center, $align: center);
     @include absolute($top: 12px,$right: 12px);
+    @extend .bg-green;
     border-radius: $radius-tag-new;
     font-size: $size-tag;
     font-weight: $font-weight-title;
-    background-color: $bg-figcaption;
     color: $txt-figcaption; 
 }

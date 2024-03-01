@@ -1,3 +1,7 @@
+body {
+    position: relative;
+}
+
 .card-subtitle {
     font-size: $size-subtitle-card;
     font-weight: $font-weight-subtitle;
@@ -6,3 +10,12 @@
 .card-title {
     font-size: $size-18;
 }
+
+.bg-grey {
+    background-color: $bg-section;  
+}
+
+.bg-green {
+    background-color: $bg-figcaption; 
+}
+

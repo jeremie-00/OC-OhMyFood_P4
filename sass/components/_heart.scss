@@ -11,7 +11,7 @@
         @include set-size(auto, $size-heart);
         @include flex($direction: row, $justify: center, $align: center);
         cursor: pointer;
-        transition: opacity 0.5s ease;  
+        transition: opacity 0.5s ease;         
     }
     .fa-solid {
         @include absolute($top: 0,$left: 0);
@@ -24,7 +24,7 @@
 
     input[type="checkbox"]:checked {           
         + label i.fa-solid {
-            opacity: 1;  
+            opacity: 1; 
         }
         + label i.fa-regular {
             opacity: 0;            
