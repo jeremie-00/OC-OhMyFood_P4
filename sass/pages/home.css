@@ -30,6 +30,10 @@ a {
   cursor: pointer;
 }
 
+input[type=checkbox] {
+  display: none;
+}
+
 .card-subtitle {
   font-size: 17px;
   font-weight: 300;
@@ -321,7 +325,6 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  display: none;
 }
 .heart i {
   width: auto;

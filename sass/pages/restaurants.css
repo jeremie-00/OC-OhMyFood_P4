@@ -30,6 +30,10 @@ a {
   cursor: pointer;
 }
 
+input[type=checkbox] {
+  display: none;
+}
+
 .card-subtitle {
   font-size: 17px;
   font-weight: 300;
@@ -162,7 +166,6 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  display: none;
 }
 .heart i {
   width: auto;
@@ -198,6 +201,7 @@ a {
   align-items: center;
   width: 100%;
   height: 70px;
+  overflow: hidden;
 }
 .card-menu .label {
   position: absolute;
@@ -205,9 +209,6 @@ a {
   height: 100%;
   cursor: pointer;
   z-index: 1;
-}
-.card-menu input {
-  display: none;
 }
 .card-menu .card-content-menu {
   display: flex;
@@ -231,6 +232,7 @@ a {
 }
 .card-menu .card-content-menu .txt .elipse {
   width: 100%;
+  height: auto;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -244,22 +246,18 @@ a {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 0;
+  width: 60px;
   height: 100%;
+  margin: 0 -60px 0 0;
   background-color: #99E2D0;
   border-radius: 0 15px 15px 0;
-  transition: width 0.5s ease-in-out;
+  transition: margin 0.5s ease-in-out;
 }
 .card-menu .selected i {
   color: white;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
 }
 .card-menu input[type=checkbox]:checked ~ .selected {
-  width: 60px;
-}
-.card-menu input[type=checkbox]:checked ~ .selected i {
-  opacity: 1;
+  margin: 0;
 }
 
 .restaurant img {

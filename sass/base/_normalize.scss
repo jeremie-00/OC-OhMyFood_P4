@@ -9,6 +9,10 @@ a {
     cursor: pointer; 
 }
 
+input[type="checkbox"] {
+    display: none;
+}
+
 .card-subtitle {
     font-size: $size-subtitle-card;
     font-weight: $font-weight-subtitle;

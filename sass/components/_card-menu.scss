@@ -2,24 +2,18 @@
     @include flex($direction: row, $justify: start, $align: center);
     @include set-size(100%, 70px);
     @extend .style-card;
-    
+    overflow: hidden;
+
     .label {
         position: absolute;
-        width: 100%;
-        height: 100%;
+        @include set-size(100%, 100%);
         cursor: pointer;
         z-index: 1;
     }
 
-    input {
-        display: none;
-    }
-
     .card-content-menu {
         @include flex($direction: row, $justify: center, $align: center);
-        //@include spacing($padding: 0 12px);
-        width: 0;
-        height: 100%;
+        @include set-size(0, 100%);
         flex: 1;
 
 
@@ -30,7 +24,7 @@
             overflow: hidden;
  
             & .elipse {
-                width: 100%;
+                @include set-size(100%, auto);
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
@@ -38,33 +32,26 @@
         }
 
         .prix {
-            padding: 30px 15px 0 0;
+            @include spacing($padding: 30px 15px 0 0);
             font-weight: bold;
         }
     }
 
     .selected {
         @include flex($direction: row, $justify: center, $align: center);
-        width: 0;
-        height: 100%;
+        @include set-size(60px, 100%);
+        @include spacing($margin: 0 -60px 0 0);
         background-color: $bg-figcaption;
-        border-radius: 0 $radius-card $radius-card 0;
-        transition: width 0.5s ease-in-out;
-
+        border-radius: 0 $radius-card $radius-card 0;      
+        transition: margin .5s ease-in-out;
 
         & i {
             color: $font-color-clair;
-            opacity: 0;
-            transition: opacity 0.5s ease-in-out;
         }
     }
 
     input[type="checkbox"]:checked~.selected {
-        width: 60px;
-
-        & i {
-            opacity: 1;
-        }
+        @include spacing($margin: 0);
     }
 
 }
