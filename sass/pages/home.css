@@ -321,6 +321,7 @@ input[type=checkbox] {
 
 .heart {
   position: relative;
+  margin: 20px;
 }
 .heart input[type=checkbox] {
   position: absolute;
