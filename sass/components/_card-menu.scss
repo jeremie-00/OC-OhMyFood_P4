@@ -1,5 +1,5 @@
 .card-menu {
-    @include flex($direction: row, $justify: start, $align: center);
+    @extend .direction-row;
     @include set-size(100%, 70px);
     @extend .style-card;
     overflow: hidden;
@@ -12,13 +12,13 @@
     }
 
     .card-content-menu {
-        @include flex($direction: row, $justify: center, $align: center);
+        @extend .direction-row;
         @include set-size(0, 100%);
         flex: 1;
 
 
         .txt {
-            @include flex($direction: column, $justify: center, $align: start);
+            @extend .direction-column;
             @include spacing($padding: 15px, $gap: 2px);
             @include set-size(100%, auto);
             overflow: hidden;
@@ -38,7 +38,7 @@
     }
 
     .selected {
-        @include flex($direction: row, $justify: center, $align: center);
+        @extend .direction-row;
         @include set-size(60px, 100%);
         @include spacing($margin: 0 -60px 0 0);
         background-color: $bg-figcaption;

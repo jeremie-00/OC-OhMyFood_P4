@@ -1,6 +1,6 @@
 .tag-new {
     @include set-size($width-tag-new, $height-tag-new);
-    @include flex($direction: row, $justify: center, $align: center);
+    @extend .direction-row;
     @include absolute($top: 12px,$right: 12px);
     @extend .bg-green;
     border-radius: $radius-tag-new;

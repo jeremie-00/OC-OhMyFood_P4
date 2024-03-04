@@ -9,7 +9,7 @@
 
     i {
         @include set-size(auto, $size-heart);
-        @include flex($direction: row, $justify: center, $align: center);
+        @extend .direction-row;
         cursor: pointer;
         transition: opacity 1.2s ease;         
     }

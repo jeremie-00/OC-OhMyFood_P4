@@ -1,5 +1,5 @@
 .wrapper-btn {
-    @include flex($direction: row, $justify: center, $align: center);
+    @extend .direction-row;
 }
 
 .btn {

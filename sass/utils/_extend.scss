@@ -3,3 +3,11 @@
     background-color: $bg-card;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
+
+.direction-column {
+    @include flex($direction: column, $justify: center, $align: center);
+}
+
+.direction-row {
+    @include flex($direction: row, $justify: center, $align: center);
+}

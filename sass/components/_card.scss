@@ -1,6 +1,6 @@
 
 .card {
-    @include flex($direction: column, $justify: center, $align: initial);  
+    @include flex($direction: column, $justify: center, $align: unset);
     @extend .style-card;
     @include set-size(100%, auto);
 
@@ -10,12 +10,12 @@
         object-fit: cover;
     }
     .card-content {
-        @include flex($direction: row, $justify: center, $align: center);
+        @extend .direction-row;
         @include spacing($padding: 0 12px 5px);
     }
     
     .card-txt {
-        @include flex($direction: column, $justify: center, $align: start); 
+        @include flex($direction: column, $justify: center, $align: flex-start);
         @include spacing($padding: 12px 3px 15px, $gap: 2px);   
         @include set-size(100%, auto);
     }

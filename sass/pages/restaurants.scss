@@ -15,20 +15,15 @@
 @import '../components/_card-menu';
 
 .restaurant {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
     img {
         @include set-size(100%, 275px);
-        //@include set-size(105%, auto);
         object-fit: cover;
         position: relative;
         z-index: -1;
     }
 
     .menus {
-        @include flex($direction: column, $justify: center, $align: center);
+        @extend .direction-column;
         @include spacing($margin: -35px 0 0 0);
         border-radius: 40px 40px 0 0;
         @extend .bg-grey;
@@ -53,12 +48,12 @@
         }
 
         .wrapper-menu {
-            @include flex($direction: column, $justify: center, $align: start);
+            @extend .direction-column;
             @include set-size(100%, auto);
             @include spacing($margin: 30px 0 0 0, $padding: 10px, $gap: 40px);
 
             .menu {
-                @include flex($direction: column, $justify: center, $align: start);
+                @extend .direction-column;
                 @include set-size(100%, auto);
                 @include spacing($gap: 10px);
                 @extend .animate;
@@ -66,7 +61,7 @@
                 .majuscule {
                     font-size: $size-16;
                     font-weight: $font-weight-subtitle;
-                    @include flex($direction: column, $justify: unset, $align: unset);
+                    @include flex($direction: column, $justify: center, $align: flex-start);
                     @include set-size(100%, auto);
                     @include spacing($gap: 5px);
                     text-transform: uppercase;
