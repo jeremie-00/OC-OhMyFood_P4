@@ -1,7 +1,7 @@
 .blurry {
     filter: blur(8px);
     animation: blur-out 0.3s linear $time-load forwards;
-
+    width: 100%;
     @keyframes blur-out {
         to {
             filter: blur(0);

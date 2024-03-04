@@ -58,8 +58,7 @@
             box-shadow: none;
         }
     }
-
-
+    
     .contenaire {
         @include flex($direction: row, $justify: center, $align: center);
 
