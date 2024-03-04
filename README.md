@@ -4,8 +4,8 @@ Bienvenue sur Ohmyfood ! Découvrez une expérience culinaire unique en ligne o�
 
 ## Captures d'écran
 
-![Capture d'écran 1](/screenshot/Capture.PNG)
-
+![Capture d'écran 1](/screenshot/Accueil.PNG)
+![Capture d'écran 2](/screenshot/Restaurant.PNG)
 ## Technologies utilisées
 
 - HTML5
