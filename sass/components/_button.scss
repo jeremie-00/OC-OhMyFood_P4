@@ -14,10 +14,10 @@
     border: none;
     font-weight: $font-weight-title;
     text-align: center;
-    transition: all .3s ease-in-out; 
+    transition: all .8s ease-in-out; 
 
     &:hover{ 
-        opacity: 0.8;
+        filter: brightness(1.1);
         box-shadow: $hover-box-shadow;
     }
 }
