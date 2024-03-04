@@ -1,11 +1,11 @@
 .contenaire {
     @include flex($direction: column, $justify: center, $align: center);
-    @include spacing($padding: 10px 0, $gap: 30px);
+    @include spacing($padding: 15px, $gap: 30px);
 
     & .wrapper {
         @include set-size($width-wrapper-fonctionnement, $height-wrapper-fonctionnement);
         @include flex($direction: row, $justify: center, $align: center); 
-        @include spacing($margin: 0 0 0 10px);
+        //@include spacing($margin: 0 0 0 10px);
         border-radius: $radius-card-fonctionnement;
         background-color: $bg-section;
         box-shadow: $box-shadow-btn;
@@ -49,4 +49,18 @@
             //margin-left: 25px;
         }
     }
+}
+@media (min-width: 767.98px) {
+    .contenaire {
+        @include flex($direction: row, $justify: center, $align: center); 
+        & .wrapper {
+           & .content {
+                @include flex($direction: row, $justify: start, $align: center);
+                text-align: start;
+                margin-right: 20px;
+            }
+        }
+        
+    }
+
 }

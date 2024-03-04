@@ -22,11 +22,9 @@ h1, h2 {
 body {
   display: flex;
   justify-content: center;
-  height: 100vh;
 }
 
 .main-contenaire {
-  justify-content: space-between;
   width: 100%;
   max-width: 1440px;
 }
@@ -220,7 +218,7 @@ input[type=checkbox] {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px 0;
+  padding: 15px;
   gap: 30px;
 }
 .contenaire .wrapper {
@@ -230,7 +228,6 @@ input[type=checkbox] {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 0 0 0 10px;
   border-radius: 20px;
   background-color: #F6F6F6;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
@@ -281,6 +278,22 @@ input[type=checkbox] {
   cursor: default;
 }
 
+@media (min-width: 767.98px) {
+  .contenaire {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenaire .wrapper .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    text-align: start;
+    margin-right: 20px;
+  }
+}
 .card {
   display: flex;
   flex-direction: column;
