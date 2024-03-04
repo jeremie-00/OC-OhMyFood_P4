@@ -407,6 +407,10 @@ input[type=checkbox] {
 }
 
 @media (min-width: 767.98px) {
+  .header .logo,
+  .header .search {
+    box-shadow: none;
+  }
   .contenaire {
     display: flex;
     flex-direction: row;

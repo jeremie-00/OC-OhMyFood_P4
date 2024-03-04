@@ -52,6 +52,13 @@
 }
 
 @media (min-width: 767.98px) {
+    .header {
+        .logo,
+        .search {
+            box-shadow: none;
+        }
+    }
+
 
     .contenaire {
         @include flex($direction: row, $justify: center, $align: center);
