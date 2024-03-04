@@ -58,6 +58,9 @@
         .logo,
         .search {
             box-shadow: none;
+            & img {
+                @include set-size(200px, auto);
+            }
         }
     }
     h1 {

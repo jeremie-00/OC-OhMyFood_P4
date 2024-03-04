@@ -420,6 +420,11 @@ input[type=checkbox] {
   .header .search {
     box-shadow: none;
   }
+  .header .logo img,
+  .header .search img {
+    width: 200px;
+    height: auto;
+  }
   h1 {
     font-size: 40px;
   }
