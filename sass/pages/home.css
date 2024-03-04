@@ -420,6 +420,9 @@ input[type=checkbox] {
   .header .search {
     box-shadow: none;
   }
+  h1 {
+    font-size: 40px;
+  }
   .contenaire {
     display: flex;
     flex-direction: row;

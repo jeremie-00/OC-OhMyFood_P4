@@ -60,6 +60,9 @@
             box-shadow: none;
         }
     }
+    h1 {
+        font-size: 40px;
+    }
 
     .contenaire {
         @include flex($direction: row, $justify: center, $align: center);
