@@ -29,7 +29,7 @@
 
     .menus {
         @include flex($direction: column, $justify: center, $align: center);
-        @include spacing($margin: -50px 0 0 0);
+        @include spacing($margin: -35px 0 0 0);
         border-radius: 40px 40px 0 0;
         @extend .bg-grey;
         width: 100%;
@@ -77,8 +77,6 @@
                         @extend .bg-green;
                     }
                 }
-
-
             }
         }
     }
@@ -114,7 +112,13 @@
 }
 
 @media (min-width: 767.98px) {
-    .restaurant .menus .header-menu {
-        @include flex($direction: row, $justify: center, $align: center);
+    .restaurant {
+        & img {
+            @include set-size(100%, 385px);
+        }
+
+        & .menus .header-menu {
+            @include flex($direction: row, $justify: center, $align: center);
+        }    
     }
 }
