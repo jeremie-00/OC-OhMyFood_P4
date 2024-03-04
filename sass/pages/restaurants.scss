@@ -15,6 +15,9 @@
 @import '../components/_card-menu';
 
 .restaurant {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     img {
         @include set-size(100%, 275px);
         //@include set-size(105%, auto);
@@ -28,7 +31,8 @@
         @include spacing($margin: -50px 0 0 0);
         border-radius: 40px;
         @extend .bg-grey;
-        flex: 1;
+        width: 100%;
+        max-width: 1055px;
 
 
         .header-menu {
@@ -51,7 +55,7 @@
             @include flex($direction: column, $justify: center, $align: start);
             @include set-size(100%, auto);
             @include spacing($margin: 30px 0 0 0, $padding: 10px, $gap: 40px);
-            
+            max-width: 615px;
             .menu {
                 @include flex($direction: column, $justify: center, $align: start);
                 @include set-size(100%, auto);
@@ -105,4 +109,8 @@
 
 }
 
-
+@media (min-width: 767.98px) {
+    .restaurant .menus .header-menu {
+        @include flex($direction: row, $justify: center, $align: center);
+    }
+}

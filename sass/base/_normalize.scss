@@ -1,11 +1,13 @@
 body {
     display: flex;
     justify-content: center;
-    
+    flex-direction: column;
+    align-items: center;  
 }
 
 .main-contenaire {
     max-width: 1440px;
+    width: 100%;
 }
 
 .max-width {
