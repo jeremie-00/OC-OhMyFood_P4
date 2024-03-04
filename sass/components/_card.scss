@@ -18,7 +18,11 @@
         @include spacing($padding: 12px 3px 15px, $gap: 2px);   
         @include set-size(100%, auto);
     }
-    
+    .heart {
+        position: absolute;
+        bottom: 15px;
+        right: 20px;
+    }
 }
 
 

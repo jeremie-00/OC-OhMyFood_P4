@@ -298,6 +298,11 @@ input[type=checkbox] {
   width: 100%;
   height: auto;
 }
+.card .heart {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+}
 
 .tag-new {
   width: 80px;
