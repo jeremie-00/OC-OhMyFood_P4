@@ -315,7 +315,7 @@ input[type=checkbox] {
   justify-content: center;
   align-items: center;
   margin: -50px 0 0 0;
-  border-radius: 40px;
+  border-radius: 40px 40px 0 0;
   width: 100%;
   max-width: 1055px;
 }

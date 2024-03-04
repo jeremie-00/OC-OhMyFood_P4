@@ -18,7 +18,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
     img {
         @include set-size(100%, 275px);
         //@include set-size(105%, auto);
@@ -30,7 +30,7 @@
     .menus {
         @include flex($direction: column, $justify: center, $align: center);
         @include spacing($margin: -50px 0 0 0);
-        border-radius: 40px;
+        border-radius: 40px 40px 0 0;
         @extend .bg-grey;
         width: 100%;
         max-width: 1055px;
