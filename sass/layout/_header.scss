@@ -3,7 +3,7 @@
 
     .logo {
         @include flex($direction: row, $justify: center, $align: center);
-        @include spacing($padding:15px 0 0 0);
+        @include spacing($padding: 5px 0 0 0);
         @include set-size(100%, $height-div-logo);
         box-shadow: $shadow-header-1;
         z-index: 1;
