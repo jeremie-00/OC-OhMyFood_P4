@@ -10,7 +10,7 @@
 
         & img {
             @include set-size($width-img-logo, auto);
-      }
+        }
     }
 
     .search {
@@ -18,18 +18,19 @@
         @include set-size(100%, $height-div-search);
         background-color: $bg-search;
         box-shadow: $shadow-header-2;
-        
+
         & i {
             @include spacing($margin: 0 10px 0 0);
         }
+
         & .input-search {
             @include set-size($width-input-search, auto);
-            font-size: $size-16;  
-            font-weight: $font-weight-title; 
+            font-size: $size-16;
+            font-weight: $font-weight-title;
             background: transparent;
             border: none;
             outline: none;
-            text-align: center;                                                             
+            text-align: center;
         }
     }
 
@@ -37,5 +38,26 @@
         $size: 25px;
         @include absolute($top: $size, $left: $size);
     }
-    
+
+}
+
+@media (min-width: 767.98px) {
+    .header {
+        & .logo {
+            @include set-size(100%, 96px);
+            box-shadow: none;
+
+            & img {
+                @include set-size(200px, auto);
+            }
+        }
+
+        & .search {
+            box-shadow: none;
+        }
+        & a {
+            $size: 25px;
+            @include absolute($top: calc($size + 15px), $left: $size);
+        }
+    }
 }

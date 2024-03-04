@@ -54,19 +54,9 @@
 }
 
 @media (min-width: 767.98px) {
-    .header {
-        .logo,
-        .search {
-            box-shadow: none;
-            & img {
-                @include set-size(200px, auto);
-            }
-        }
-    }
     h1 {
         font-size: 40px;
     }
-
     .contenaire {
         @include flex($direction: row, $justify: center, $align: center);
 
@@ -104,10 +94,4 @@
             }          
         }
     }
-.restaurant .menus{
-    & .header-menu {
-        @include flex($direction: row, $justify: center, $align: center);
-    }
-}
-
 }
