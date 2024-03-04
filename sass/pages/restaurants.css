@@ -345,7 +345,6 @@ input[type=checkbox] {
   width: 100%;
   height: auto;
   margin: 30px 0 0 0;
-  padding: 10px;
 }
 .restaurant .menus .header-menu .heart {
   margin-bottom: 0;
@@ -365,7 +364,6 @@ input[type=checkbox] {
   margin: 30px 0 0 0;
   padding: 10px;
   gap: 40px;
-  max-width: 615px;
 }
 .restaurant .menus .wrapper-menu .menu {
   display: flex;
@@ -426,6 +424,9 @@ input[type=checkbox] {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+  }
+  .restaurant .wrapper-menu {
+    max-width: 615px;
   }
 }
 
