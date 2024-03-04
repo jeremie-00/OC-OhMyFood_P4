@@ -10,16 +10,6 @@ body {
     width: 100%;
 }
 
-.max-width {
-    max-width: 1080px;
-    align-self: center;
-    width: 100%;
-    
-    & h2 {
-        margin-bottom: 30px;
-    }
-}
-
 a {
     border-radius: $radius-card;
     color: inherit;

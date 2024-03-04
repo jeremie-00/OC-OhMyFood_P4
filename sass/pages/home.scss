@@ -11,15 +11,11 @@
 @import '../layout/_header';
 @import '../layout/_footer';
 
-
 @import '../components/_button';
 @import '../components/_item-fonctionnement';
 @import '../components/_card';
 @import '../components/_tag-new';
 @import '../components/_heart';
-
-
-
 
 .section {
     @include flex($direction: column, $justify: center, $align: initial);
@@ -53,10 +49,21 @@
     @include spacing($gap: 15px);
 }
 
+.max-width {
+    max-width: 1080px;
+    align-self: center;
+    width: 100%;
+
+    & h2 {
+        margin-bottom: 30px;
+    }
+}
+
 @media (min-width: 767.98px) {
     h1 {
         font-size: 40px;
     }
+
     .contenaire {
         @include flex($direction: row, $justify: center, $align: center);
 
@@ -71,27 +78,11 @@
 
     .card-restaurants {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);       
-        @include spacing($gap: 50px 50px);       
+        grid-template-columns: repeat(2, 1fr);
+        @include spacing($gap: 50px 50px);
     }
+
     .max-width {
         padding: 0 30px;
-    }
-    .footer {
-        @include flex($direction: row-reverse, $justify: end, $align: flex-end);
-        @include set-size(100%, 115px);
-        @include spacing($padding: 0px 25px 25px 0px, $gap: 16px);
-        & h2 {
-            @include spacing($margin: 0px 25px 0 0);        
-        }
-        & .liste-footer {
-            @include flex($direction: row, $justify: center, $align: center);
-            @include spacing($margin:0px 0px 3px 0px);  
-
-            & :nth-child(2),
-            & :nth-child(4) {
-                @include spacing($margin: 0 30px 0 0);
-            }          
-        }
     }
 }
