@@ -2,6 +2,10 @@
 
 Bienvenue sur Ohmyfood ! Découvrez une expérience culinaire unique en ligne où vous pouvez explorer et commander parmi une sélection de délices gastronomiques.
 
+## Captures d'écran
+
+![Capture d'écran 1](/screenshot/Capture.PNG)
+
 ## Technologies utilisées
 
 - HTML5
