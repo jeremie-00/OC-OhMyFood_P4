@@ -19,6 +19,8 @@
 @import '../components/_heart';
 
 
+
+
 .section {
     @include flex($direction: column, $justify: center, $align: initial);
     @include spacing($padding: 50px 20px 70px, $gap: 20px);
@@ -58,7 +60,7 @@
             box-shadow: none;
         }
     }
-    
+
     .contenaire {
         @include flex($direction: row, $justify: center, $align: center);
 
@@ -73,10 +75,12 @@
 
     .card-restaurants {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        @include spacing($gap: 50px 100px);
+        grid-template-columns: repeat(2, 1fr);       
+        @include spacing($gap: 50px 50px);       
     }
-
+    .max-width {
+        padding: 0 30px;
+    }
     .footer {
         @include flex($direction: row-reverse, $justify: end, $align: flex-end);
         @include set-size(100%, 115px);

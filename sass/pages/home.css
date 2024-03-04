@@ -24,8 +24,12 @@ body {
   justify-content: center;
 }
 
-.max-width {
+.main-contenaire {
   max-width: 1440px;
+}
+
+.max-width {
+  max-width: 1080px;
   align-self: center;
   width: 100%;
 }
@@ -433,7 +437,10 @@ input[type=checkbox] {
   .card-restaurants {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 50px 100px;
+    gap: 50px 50px;
+  }
+  .max-width {
+    padding: 0 30px;
   }
   .footer {
     display: flex;
