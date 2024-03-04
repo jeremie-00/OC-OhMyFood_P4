@@ -26,3 +26,23 @@
         
     }
 }
+
+@media (min-width: 767.98px) {
+    .footer {
+        @include flex($direction: row-reverse, $justify: end, $align: flex-end);
+        @include set-size(100%, 115px);
+        @include spacing($padding: 0px 25px 25px 0px, $gap: 16px);
+        & h2 {
+            @include spacing($margin: 0px 25px 0 0);        
+        }
+        & .liste-footer {
+            @include flex($direction: row, $justify: center, $align: center);
+            @include spacing($margin:0px 0px 3px 0px);  
+
+            & :nth-child(2),
+            & :nth-child(4) {
+                @include spacing($margin: 0 30px 0 0);
+            }          
+        }
+    }
+}
