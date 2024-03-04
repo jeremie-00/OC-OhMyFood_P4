@@ -278,27 +278,13 @@ input[type=checkbox] {
   cursor: default;
 }
 
-@media (min-width: 767.98px) {
-  .contenaire {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  .contenaire .wrapper .content {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-    text-align: start;
-    margin-right: 20px;
-  }
-}
 .card {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: initial;
+  width: 100%;
+  height: auto;
 }
 .card img {
   width: 100%;
@@ -418,6 +404,28 @@ input[type=checkbox] {
   justify-content: center;
   align-items: inherit;
   gap: 15px;
+}
+
+@media (min-width: 767.98px) {
+  .contenaire {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenaire .wrapper .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    text-align: start;
+    margin-right: 20px;
+  }
+  .card-restaurants {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px 100px;
+  }
 }
 
 /*# sourceMappingURL=home.css.map */

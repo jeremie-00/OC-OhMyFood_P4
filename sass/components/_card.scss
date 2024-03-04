@@ -2,6 +2,7 @@
 .card {
     @include flex($direction: column, $justify: center, $align: initial);  
     @extend .style-card;
+    @include set-size(100%, auto);
 
     img {
         @include set-size(100%, 170px);
