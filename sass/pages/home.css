@@ -29,6 +29,9 @@ body {
   align-self: center;
   width: 100%;
 }
+.max-width h2 {
+  margin-bottom: 30px;
+}
 
 a {
   border-radius: 15px;
@@ -220,7 +223,7 @@ input[type=checkbox] {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 15px;
+  padding: 0 15px;
   gap: 30px;
 }
 .contenaire .wrapper {

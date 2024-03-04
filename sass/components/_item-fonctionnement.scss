@@ -1,6 +1,6 @@
 .contenaire {
     @include flex($direction: column, $justify: center, $align: center);
-    @include spacing($padding: 15px, $gap: 30px);
+    @include spacing($padding: 0 15px, $gap: 30px);
 
     & .wrapper {
         @include set-size($width-wrapper-fonctionnement, $height-wrapper-fonctionnement);
