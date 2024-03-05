@@ -8,15 +8,13 @@
         position: absolute;
         @include set-size(100%, 100%);
         cursor: pointer;
-        z-index: 1;
     }
 
     .card-content-menu {
         @extend .direction-row;
         @include set-size(0, 100%);
         flex: 1;
-
-
+        
         .txt {
             @extend .direction-column;
             @include spacing($padding: 15px, $gap: 2px);
