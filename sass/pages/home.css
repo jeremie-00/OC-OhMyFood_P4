@@ -308,6 +308,7 @@ input[type=checkbox] {
   align-items: unset;
   width: 100%;
   height: auto;
+  position: relative;
 }
 .card img {
   width: 100%;

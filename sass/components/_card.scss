@@ -3,7 +3,8 @@
     @include flex($direction: column, $justify: center, $align: unset);
     @extend .style-card;
     @include set-size(100%, auto);
-
+    position: relative;
+    
     img {
         @include set-size(100%, 170px);
         border-radius: $radius-card $radius-card 0 0;
