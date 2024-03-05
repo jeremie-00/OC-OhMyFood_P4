@@ -4,11 +4,11 @@ Bienvenue sur Ohmyfood ! Découvrez une expérience culinaire unique en ligne o�
 
 ## Captures d'écran
 
-![Capture d'écran 1](/screenshot/Accueil.PNG)
-![Capture d'écran 2](/screenshot/Restaurant.PNG)
+![Capture d'écran 1](/Images-et-textes-Ohmyfood/capture/Accueil.PNG)
+![Capture d'écran 2](/Images-et-textes-Ohmyfood/capture/Restaurant.PNG)
 
-![Capture d'écran 3](/screenshot/Accueil-desktop.PNG)
-![Capture d'écran 4](/screenshot/Restaurant-desktop.PNG)
+![Capture d'écran 3](/Images-et-textes-Ohmyfood/capture/Accueil-desktop.PNG)
+![Capture d'écran 4](/Images-et-textes-Ohmyfood/capture/Restaurant-desktop.PNG)
 
 
 ## Technologies utilisées
