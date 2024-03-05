@@ -1,0 +1,91 @@
+.restaurant {
+    img {
+        @include set-size(100%, 275px);
+        object-fit: cover;
+        position: relative;
+        z-index: -1;
+    }
+
+    .menus {
+        @extend .direction-column;
+        @include spacing($margin: -35px 0 0 0);
+        border-radius: 40px 40px 0 0;
+        @extend .bg-grey;
+        width: 100%;
+        max-width: 1055px;
+        overflow: hidden;
+
+        .header-menu {
+            @include flex($direction: row, $justify: space-between, $align: center);
+            @include set-size(100%, auto);
+            @include spacing($margin: 30px 0 0 0);
+
+            .heart {
+                margin-bottom: 0;
+            }
+
+            .name {
+                font-family: $font-title-logo;
+                font-size: $size-title-restaurants;
+                font-weight: $font-weight-title;
+            }
+        }
+
+        .wrapper-menu {
+            @extend .direction-column;
+            @include set-size(100%, auto);
+            @include spacing($margin: 30px 0 0 0, $padding: 10px, $gap: 40px);
+
+            .menu {
+                @extend .direction-column;
+                @include set-size(100%, auto);
+                @include spacing($gap: 10px);
+                @extend .animate;
+
+                .majuscule {
+                    font-size: $size-16;
+                    font-weight: $font-weight-subtitle;
+                    @include flex($direction: column, $justify: center, $align: flex-start);
+                    @include set-size(100%, auto);
+                    @include spacing($gap: 5px);
+                    text-transform: uppercase;
+
+                    & .line {
+                        @include set-size(40px, 3px);
+                        @extend .bg-green;
+                    }
+                }
+            }
+        }
+    }
+
+    .btn {
+        @include spacing($margin: $margin-btns, $padding: $padding-btn-commander);
+    }
+
+}
+
+@keyframes slide-in-right {
+    to {
+        transform: translateX(0);
+    }
+}
+
+.animate {
+
+    transform: translateX(200%);
+    animation: slide-in-right 1.2s cubic-bezier(0.215, 0.610, 0.355, 1) forwards;
+
+    &:nth-child(2) {
+        animation-delay: 0.5s;
+    }
+
+    &:nth-child(3) {
+        animation-delay: 1s;
+    }
+
+    &:nth-child(4) {
+        animation-delay: 1.5s;
+    }
+    
+}

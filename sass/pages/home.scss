@@ -9,6 +9,7 @@
 
 @import '../layout/_loader';
 @import '../layout/_header';
+@import '../layout/_home';
 @import '../layout/_footer';
 
 @import '../components/_button';
@@ -18,44 +19,3 @@
 @import '../components/_heart';
 
 @import '../base/media-query';
-
-.section {
-    @include spacing($padding: 50px 20px 70px, $gap: 20px);
-}
-
-.reserver {
-    @extend .direction-column;
-    @include spacing($padding: 20px);
-    @extend .bg-grey;
-    text-align: center;
-}
-
-.restaurants {
-    @extend .bg-grey;
-}
-
-.title {
-    @include spacing($margin: 20px 0 10px 0, $padding: 0 30px);
-}
-
-.subtitle {
-    font-size: $size-18;
-    font-weight: $font-weight-subtitle;
-    cursor: default;
-}
-
-.card-restaurants {
-    @extend .direction-column;
-    @include spacing($gap: 15px);
-}
-
-.max-width {
-    max-width: 1080px;
-    align-self: center;
-    width: 100%;
-
-    & h2 {
-        margin-bottom: 30px;
-    }
-}
-

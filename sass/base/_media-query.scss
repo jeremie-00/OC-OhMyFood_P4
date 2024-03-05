@@ -60,10 +60,11 @@
             @include set-size(100%, 385px);
         }
 
-        & .menus .header-menu {
-            @include flex($direction: row, $justify: center, $align: center);
-        } 
-        
+        & .menus {
+            & .header-menu {
+                @include flex($direction: row, $justify: center, $align: center);
+            } 
+        }     
         .wrapper-menu {
             max-width: 615px;
         }
