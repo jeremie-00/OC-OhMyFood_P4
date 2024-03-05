@@ -1,9 +1,6 @@
 // TEMPS
-
-
 //loader
 $time-load: 1.5s;
-
 
 // COLOR
 $primaire: #9356DC;
@@ -12,6 +9,7 @@ $secondaire: #FF79DA;
 $bg-search: #EAEAEA;
 $bg-footer: #353535;
 
+//bouton
 $bg-btn: linear-gradient(-179deg, $secondaire -25%, $primaire 123.93%);
 $box-shadow-btn: 0px 4px 10px 0px #00000040;
 $hover-box-shadow: 0px 4px 15px 0px #00000059;
@@ -54,9 +52,10 @@ $height-wrapper-fonctionnement: 73px;
 $width-tag-new: 80px;
 $height-tag-new: 29px;
 // bouton
-$width-btn: 218px;
-$width-btn-commander: 186px;
-$height-btn: 50px;
+$padding-btn-accueil: 21.55px;
+$padding-btn-commander: 48.9px;
+$padding-height-btns: 15.5px;
+$margin-btns: 30px 0 40px;
 
 
 

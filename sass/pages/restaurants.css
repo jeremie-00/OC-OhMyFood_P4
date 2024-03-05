@@ -149,9 +149,8 @@ input[type=checkbox] {
 }
 
 .btn {
-  width: 218px;
-  height: 50px;
   margin: 30px 0 40px;
+  padding: 15.5px 21.55px;
   font-size: 16px;
   border-radius: 25px;
   color: white;
@@ -402,8 +401,8 @@ input[type=checkbox] {
   height: 3px;
 }
 .restaurant .btn {
-  width: 186px;
-  height: 50px;
+  margin: 30px 0 40px;
+  padding: 15.5px 48.9px;
 }
 
 @keyframes slide-in-right {

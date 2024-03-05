@@ -78,7 +78,7 @@
     }
 
     .btn {
-        @include set-size($width-btn-commander, $height-btn);
+        @include spacing($margin: $margin-btns, $padding: $padding-height-btns $padding-btn-commander);
     }
 
 }

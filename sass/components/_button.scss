@@ -3,8 +3,7 @@
 }
 
 .btn {
-    @include set-size($width-btn, $height-btn);
-    @include spacing($margin: 30px 0 40px);
+    @include spacing($margin: $margin-btns, $padding: $padding-height-btns $padding-btn-accueil);
     font-size: $size-16;
     border-radius: $radius-btn;
     color: $font-color-clair;
