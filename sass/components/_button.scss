@@ -3,7 +3,7 @@
 }
 
 .btn {
-    @include spacing($margin: $margin-btns, $padding: $padding-height-btns $padding-btn-accueil);
+    @include spacing($margin: $margin-btns, $padding: $padding-btn-accueil);
     font-size: $size-16;
     border-radius: $radius-btn;
     color: $font-color-clair;

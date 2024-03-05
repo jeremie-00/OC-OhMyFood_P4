@@ -49,9 +49,9 @@ $height-wrapper-fonctionnement: 73px;
 $padding-tag-new: 6px 12.31px;
 
 // bouton
-$padding-btn-accueil: 21.55px;
-$padding-btn-commander: 48.9px;
 $padding-height-btns: 15.5px;
+$padding-btn-accueil: $padding-height-btns 21.55px;
+$padding-btn-commander: $padding-height-btns 48.9px;
 $margin-btns: 30px 0 40px;
 
 
