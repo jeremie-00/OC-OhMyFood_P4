@@ -1,3 +1,4 @@
+
 .header {
     @include flex($direction: column, $justify: center, $align: center);
 
@@ -40,25 +41,4 @@
         @include absolute($top: $size, $left: $size);
     }
 
-}
-
-@media (min-width: 767.98px) {
-    .header {
-        & .logo {
-            @include set-size(100%, 96px);
-            box-shadow: none;
-
-            & img {
-                @include set-size(200px, auto);
-            }
-        }
-
-        & .search {
-            box-shadow: none;
-        }
-        & a {
-            $size: 25px;
-            @include absolute($top: calc($size + 15px), $left: $size);
-        }
-    }
 }

@@ -17,6 +17,8 @@
 @import '../components/_tag-new';
 @import '../components/_heart';
 
+@import '../base/media-query';
+
 .section {
     @include spacing($padding: 50px 20px 70px, $gap: 20px);
 }
@@ -57,39 +59,3 @@
     }
 }
 
-@media (min-width: 767.98px) {
-    .reserver {
-        gap: 30px;
-    }
-    .section {
-        @include spacing($padding: 40px 20px, $gap: 20px);
-    }    
-    .title {
-        font-size: 40px;
-        @include spacing($margin: 10px 0 0 0, $padding: 0);
-    }
-    .btn {
-        margin: 0 0 10px 0;
-    }
-    .contenaire {
-        @include flex($direction: row, $justify: center, $align: center);
-
-        & .wrapper {
-            & .content {
-                @include flex($direction: row, $justify: start, $align: center);
-                text-align: start;
-                margin-right: 20px;
-            }
-        }
-    }
-
-    .card-restaurants {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        @include spacing($gap: 50px 100px);
-    }
-
-    .max-width {
-        padding: 0 30px;
-    }
-}

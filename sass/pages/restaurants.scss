@@ -14,6 +14,8 @@
 @import '../components/_heart';
 @import '../components/_card-menu';
 
+@import '../base/media-query';
+
 .restaurant {
     img {
         @include set-size(100%, 275px);
@@ -104,20 +106,4 @@
         animation-delay: 1.5s;
     }
     
-}
-
-@media (min-width: 767.98px) {
-    .restaurant {
-        & img {
-            @include set-size(100%, 385px);
-        }
-
-        & .menus .header-menu {
-            @include flex($direction: row, $justify: center, $align: center);
-        } 
-        
-        .wrapper-menu {
-            max-width: 615px;
-        }
-    }
 }
