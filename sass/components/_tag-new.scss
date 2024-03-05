@@ -1,8 +1,8 @@
 .tag-new {
-    @include set-size($width-tag-new, $height-tag-new);
+    padding: $padding-tag-new;
     @extend .direction-row;
-    @include absolute($top: 12px,$right: 12px);
     @extend .bg-green;
+    @include absolute($top: 12px,$right: 12px);
     border-radius: $radius-tag-new;
     font-size: $size-tag;
     font-weight: $font-weight-title;
