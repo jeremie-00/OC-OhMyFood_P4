@@ -85,6 +85,7 @@ input[type=checkbox] {
   width: 100vw;
   height: 100vh;
   position: fixed;
+  top: 0;
   z-index: 9999;
   background-color: rgba(246, 246, 246, 0.5);
   animation: fade-out 0.3s 1.5s forwards;
