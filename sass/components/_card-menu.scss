@@ -41,7 +41,7 @@
         @extend .direction-row;
         @include set-size(60px, 100%);
         @include spacing($margin: 0 -60px 0 0);
-        background-color: $bg-figcaption;
+        background-color: $bg-green;
         border-radius: 0 $radius-card $radius-card 0;      
         transition: margin .5s ease-in-out;
 

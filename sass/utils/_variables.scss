@@ -5,23 +5,20 @@ $time-load: 1.5s;
 // COLOR
 $primaire: #9356DC;
 $secondaire: #FF79DA;
-
 $bg-search: #EAEAEA;
 $bg-footer: #353535;
+$bg-green: #99E2D0;
+$txt-green: #008766;
+$bg-section: #F6F6F6;
+$bg-card: white;
 
 //bouton
 $bg-btn: linear-gradient(-179deg, $secondaire -25%, $primaire 123.93%);
 $box-shadow-btn: 0px 4px 10px 0px #00000040;
 $hover-box-shadow: 0px 4px 15px 0px #00000059;
-
+//coeur
 $bg-heart: linear-gradient(-193.33deg, $primaire -11.44%, $secondaire 123.93%);
-
-$bg-figcaption: #99E2D0;
-$txt-figcaption: #008766;
-
-$bg-section: #F6F6F6;
-$bg-card: white;        
-
+//en-tete
 $shadow-header-1: 0px 2px 3px 0px #b9b9b9;
 $shadow-header-2: 0px 3px 5px 0px #acabab;
 
