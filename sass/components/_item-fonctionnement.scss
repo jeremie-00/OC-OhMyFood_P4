@@ -10,7 +10,12 @@
         box-shadow: $box-shadow-btn;
         border: none;
         position: relative;
-
+        
+        &:hover {
+            & .fa-solid {
+                color: $primaire;
+            }            
+        }
 
         & .tag-num {
             @include set-size($size-tag-num, $size-tag-num);
@@ -36,9 +41,9 @@
             margin-left: 28px;
         }
 
-        & .fa-store {
-            color: $primaire;
-        }
+        // & .fa-store {
+        //     color: $primaire;
+        // }
 
         & h3 {
             @extend .direction-row;

@@ -265,6 +265,9 @@ input[type=checkbox] {
   border: none;
   position: relative;
 }
+.contenaire .wrapper:hover .fa-solid {
+  color: #9356DC;
+}
 .contenaire .wrapper .tag-num {
   width: 24px;
   height: 24px;
@@ -291,9 +294,6 @@ input[type=checkbox] {
 .contenaire .wrapper .fa-solid {
   color: grey;
   margin-left: 28px;
-}
-.contenaire .wrapper .fa-store {
-  color: #9356DC;
 }
 .contenaire .wrapper h3 {
   font-weight: 500;
