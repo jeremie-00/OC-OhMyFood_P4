@@ -18,7 +18,7 @@
         .header-menu {
             @include flex($direction: row, $justify: space-between, $align: center);
             @include set-size(100%, auto);
-            @include spacing($margin: 30px 0 0 0);
+            @include spacing($margin: 15px 0 0 0);
 
             .heart {
                 margin-bottom: 0;
@@ -34,7 +34,7 @@
         .wrapper-menu {
             @extend .direction-column;
             @include set-size(100%, auto);
-            @include spacing($margin: 30px 0 0 0, $padding: 10px, $gap: 40px);
+            @include spacing($padding: 10px, $gap: 40px);
 
             .menu {
                 @extend .direction-column;

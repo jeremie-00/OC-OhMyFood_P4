@@ -139,7 +139,7 @@ input[type=checkbox] {
   align-items: center;
   width: 100%;
   height: auto;
-  margin: 30px 0 0 0;
+  margin: 15px 0 0 0;
 }
 .restaurant .menus .header-menu .heart {
   margin-bottom: 0;
@@ -152,7 +152,6 @@ input[type=checkbox] {
 .restaurant .menus .wrapper-menu {
   width: 100%;
   height: auto;
-  margin: 30px 0 0 0;
   padding: 10px;
   gap: 40px;
 }
