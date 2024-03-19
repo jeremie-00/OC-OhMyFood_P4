@@ -3,6 +3,7 @@
     @include set-size(100%, 70px);
     @extend .style-card;
     overflow: hidden;
+    position: relative;
 
     .label {
         position: absolute;
