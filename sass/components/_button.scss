@@ -13,7 +13,7 @@
     border: none;
     font-weight: $font-weight-title;
     text-align: center;
-    transition: all .8s ease-in-out; 
+    transition: filter .8s ease-in-out, box-shadow .8s ease-in-out; 
 
     &:hover{ 
         filter: brightness(1.1);
